@@ -1,0 +1,2 @@
+Eine der Anforderungen der Cocktailmaschine ist ein einfaches Reinigungskonzept.
+Hierbei ist zu beachten, dass Bauteile wie schläuche einfach ausgetauscht werden können. Durch Ventile soll kein Fluss erfolgen.

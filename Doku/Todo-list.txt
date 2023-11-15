@@ -1,0 +1,6 @@
+Todo-List:
+Pumpenkauf ok
+Pumpentest ok
+Dokumentation
+Reinigungskonzept
+...
