@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.12.2.93"?>
+<Objects>
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="132869918060000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\IEC.prg"
+    LogicalPath="Program"
+    Type="Program"
+    LastWriteTime="132869918060000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Cyclic.st"
+    LogicalPath="Program.Cyclic.st"
+    Type="File"
+    LastWriteTime="132869918060000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Init.st"
+    LogicalPath="Program.Init.st"
+    Type="File"
+    LastWriteTime="132869918060000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Exit.st"
+    LogicalPath="Program.Exit.st"
+    Type="File"
+    LastWriteTime="132869918060000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Types.typ"
+    LogicalPath="Program.Types.typ"
+    Type="File"
+    LastWriteTime="132869918060000000"
+    Private="true" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Variables.var"
+    LogicalPath="Program.Variables.var"
+    Type="File"
+    LastWriteTime="132869918060000000"
+    Private="true" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Config.pkg"
+    LogicalPath="Config1"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="132864406560000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.hw"
+    LogicalPath="Config1.Hardware.hw"
+    Type="File"
+    LastWriteTime="133465050025226776"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.hwl"
+    LogicalPath="Config1.Hardware.hwl"
+    Type="File"
+    LastWriteTime="132865412000000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.pkg"
+    LogicalPath="Config1.X20CP1382"
+    Type="Cpu"
+    LastWriteTime="132889663500000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.sw"
+    LogicalPath="Config1.X20CP1382.Cpu.sw"
+    Type="File"
+    LastWriteTime="132869918080000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.per"
+    LogicalPath="Config1.X20CP1382.Cpu.per"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\IoMap.iom"
+    LogicalPath="Config1.X20CP1382.IoMap.iom"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\PvMap.vvm"
+    LogicalPath="Config1.X20CP1382.PvMap.vvm"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Connectivity\Package.pkg"
+    LogicalPath="Config1.X20CP1382.Connectivity"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="Config1.X20CP1382.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\TextSystem\Package.pkg"
+    LogicalPath="Config1.X20CP1382.TextSystem"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\UnitSystem\Package.pkg"
+    LogicalPath="Config1.X20CP1382.UnitSystem"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="132864406520000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="132864406520000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\Firewall\Package.pkg"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.Firewall"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\AccessAndSecurity\Firewall\Rules.firewallRules"
+    LogicalPath="Config1.X20CP1382.AccessAndSecurity.Firewall.Rules.firewallRules"
+    Type="File"
+    LastWriteTime="132864406540000000"
+    Private="false" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappControl\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappControl"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappMotion\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappMotion"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappServices\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappServices"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappSafety\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappSafety"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappSafety\SafeApplication\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappSafety.SafeApplication"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappSafety\SafeCommissioning\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappSafety.SafeCommissioning"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappView\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappView"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappVision\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappVision"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\mappCockpit\Package.pkg"
+    LogicalPath="Config1.X20CP1382.mappCockpit"
+    Type="Package"
+    LastWriteTime="132864406540000000" />
+  <Object
+    Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.jpg"
+    LogicalPath="Config1.Hardware.jpg"
+    Type="File"
+    LastWriteTime="132865412000000000"
+    Private="false" />
+</Objects>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.12.2.93"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\"
+  TempDirectory="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Temp\"
+  AutomationStudioVersion="4.12.2.93"
+  AutomationStudioEdition="Standard"
+  BuildCrossReference="false"
+  ActiveConfiguration="Config1"
+  CreateAnsiCDeclarations="false" />
