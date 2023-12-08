@@ -1,4 +1,5 @@
-
 VAR_CONFIG
-
+	::Program:speedTreadmill AT %QW."X20AO4632".AnalogOutput01;
+	::Program:directionTreadmillright AT %QW."X20AO4632".AnalogOutput02;
+	::Program:directionTreadmillleft AT %QW."X20AO4632".AnalogOutput03;
 END_VAR

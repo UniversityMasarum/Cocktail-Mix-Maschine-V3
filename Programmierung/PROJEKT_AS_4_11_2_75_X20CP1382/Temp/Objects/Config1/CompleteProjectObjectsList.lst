@@ -5,7 +5,7 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Package.pkg"
     LogicalPath=""
     Type="Package.ParentUnknown"
-    LastWriteTime="132869918060000000" />
+    LastWriteTime="133465172909718794" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Global.typ"
     LogicalPath="Global.typ"
@@ -27,93 +27,93 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\binary.lby"
     LogicalPath="Libraries.operator"
     Type="Library"
-    LastWriteTime="132864406520000000" />
+    LastWriteTime="133003566140000000" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.fun"
     LogicalPath="Libraries.operator.operator.fun"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.typ"
     LogicalPath="Libraries.operator.operator.typ"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\operator\operator.var"
     LogicalPath="Libraries.operator.operator.var"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\binary.lby"
     LogicalPath="Libraries.runtime"
     Type="Library"
-    LastWriteTime="132864406520000000" />
+    LastWriteTime="133003566140000000" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.fun"
     LogicalPath="Libraries.runtime.runtime.fun"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.typ"
     LogicalPath="Libraries.runtime.runtime.typ"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\runtime\runtime.var"
     LogicalPath="Libraries.runtime.runtime.var"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\binary.lby"
     LogicalPath="Libraries.astime"
     Type="Library"
-    LastWriteTime="132864406520000000" />
+    LastWriteTime="133003566140000000" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.fun"
     LogicalPath="Libraries.astime.astime.fun"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.typ"
     LogicalPath="Libraries.astime.astime.typ"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\astime\astime.var"
     LogicalPath="Libraries.astime.astime.var"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\binary.lby"
     LogicalPath="Libraries.AsIecCon"
     Type="Library"
-    LastWriteTime="132864406520000000" />
+    LastWriteTime="133003566140000000" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.fun"
     LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.typ"
     LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Libraries\AsIecCon\AsIecCon.var"
     LogicalPath="Libraries.AsIecCon.AsIecCon.var"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133003566140000000"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\IEC.prg"
@@ -124,7 +124,7 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Cyclic.st"
     LogicalPath="Program.Cyclic.st"
     Type="File"
-    LastWriteTime="132869918060000000"
+    LastWriteTime="133465198790647916"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Init.st"
@@ -148,7 +148,7 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Logical\Program\Variables.var"
     LogicalPath="Program.Variables.var"
     Type="File"
-    LastWriteTime="132869918060000000"
+    LastWriteTime="133465190798967861"
     Private="true" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Config.pkg"
@@ -159,24 +159,24 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="133465050025226776"
+    LastWriteTime="133465142603560467"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.hwl"
     LogicalPath="Config1.Hardware.hwl"
     Type="File"
-    LastWriteTime="132865412000000000"
+    LastWriteTime="133465192019632651"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.pkg"
     LogicalPath="Config1.X20CP1382"
     Type="Cpu"
-    LastWriteTime="132889663500000000" />
+    LastWriteTime="133465198593136043" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.sw"
     LogicalPath="Config1.X20CP1382.Cpu.sw"
     Type="File"
-    LastWriteTime="132869918080000000"
+    LastWriteTime="133465172909868793"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\Cpu.per"
@@ -188,7 +188,7 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\IoMap.iom"
     LogicalPath="Config1.X20CP1382.IoMap.iom"
     Type="File"
-    LastWriteTime="132864406520000000"
+    LastWriteTime="133465191225974149"
     Private="false" />
   <Object
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\X20CP1382\PvMap.vvm"
@@ -343,6 +343,6 @@
     Path="C:\Users\Johannes\Documents\Cocktail-Mix-Maschine-V3-main\Programmierung\PROJEKT_AS_4_11_2_75_X20CP1382\Physical\Config1\Hardware.jpg"
     LogicalPath="Config1.Hardware.jpg"
     Type="File"
-    LastWriteTime="132865412000000000"
+    LastWriteTime="133465192019951843"
     Private="false" />
 </Objects>

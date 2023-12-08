@@ -52,6 +52,18 @@
     <Parameter ID="BusCycleTrigger" Value="auto" />
     <Parameter ID="OutputCycleTrigger" Value="auto" />
   </Module>
+  <Module ID="IF6.ST1" Hardware="X20AO4632">
+    <Parameter ID="HardwareModuleName" Value="X20AO4632" />
+  </Module>
+  <Module ID="IF6.ST1.IO" Hardware="X20AO4632">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="ChannelType01" Value="-10V to +10V" />
+    <Parameter ID="ChannelType02" Value="-10V to +10V" />
+    <Parameter ID="ChannelType03" Value="-10V to +10V" />
+    <Parameter ID="ChannelType04" Value="-10V to +10V" />
+  </Module>
   <Module ID="IF7.CANIO" Hardware="CANIO">
     <Parameter ID="Timeout" Value="1000" Type="UDINT" />
     <Parameter ID="Retries" Value="3" Type="UDINT" />

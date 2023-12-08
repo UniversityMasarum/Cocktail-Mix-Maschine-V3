@@ -978,6 +978,272 @@
       </Channel>
     </Resource>
   </Hardware>
+  <Hardware Family="10" ID="X20AO4632" Modno="7077" UseType="3">
+    <Parameter ID="NeededBus" Value="X2X" />
+    <Parameter ID="X2XNodeType" Value="STANDARD" />
+    <Parameter ID="InsertParameter" Value="ARIOMasterBus" />
+    <Parameter ID="RemoteUpdate" Value="1" Type="UDINT" />
+    <Parameter ID="CanioUsetyp" Value="16" Type="UDINT" />
+    <Parameter ID="CanioLogicalWidth" Value="1" Type="UDINT" />
+    <Resource ID="IO">
+      <Parameter ID="Classcode" Value="0x2000000d" Type="UDINT" />
+      <Parameter ID="InitScript" Value="&#xD;&#xA;				write(ConfigOutput01, 0x0000&#xD;&#xA;				 | ChannelType01==&quot;0 to 20mA&quot; ? 0x0100 : 0x0000&#xD;&#xA;				 | ChannelType02==&quot;0 to 20mA&quot; ? 0x0200 : 0x0000&#xD;&#xA;				 | ChannelType03==&quot;0 to 20mA&quot; ? 0x0400 : 0x0000&#xD;&#xA;				 | ChannelType04==&quot;0 to 20mA&quot; ? 0x0800 : 0x0000);&#xD;&#xA;			" />
+      <Channel ID="ModuleOk">
+        <Parameter ID="Ext" Value="/OK" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="BOOL" />
+      </Channel>
+      <Channel ID="SerialNumber">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="4" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+      </Channel>
+      <Channel ID="ModuleID">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="10" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="HardwareVariant">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="12" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="FirmwareVersion">
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="14" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="AnalogOutput01">
+        <Filter Value="NOT(ARIOMasterBus='CANIO')" />
+        <Parameter ID="Address" Value="2" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput01_CANIO">
+        <Filter Value="ARIOMasterBus='CANIO'" />
+        <Parameter ID="Name" Value="AnalogOutput01" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput02">
+        <Filter Value="NOT(ARIOMasterBus='CANIO')" />
+        <Parameter ID="Address" Value="4" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput02_CANIO">
+        <Filter Value="ARIOMasterBus='CANIO'" />
+        <Parameter ID="Name" Value="AnalogOutput02" />
+        <Parameter ID="Address" Value="2" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput03">
+        <Filter Value="NOT(ARIOMasterBus='CANIO')" />
+        <Parameter ID="Address" Value="6" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput03_CANIO">
+        <Filter Value="ARIOMasterBus='CANIO'" />
+        <Parameter ID="Name" Value="AnalogOutput03" />
+        <Parameter ID="Address" Value="4" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput04">
+        <Filter Value="NOT(ARIOMasterBus='CANIO')" />
+        <Parameter ID="Address" Value="8" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutput04_CANIO">
+        <Filter Value="ARIOMasterBus='CANIO'" />
+        <Parameter ID="Name" Value="AnalogOutput04" />
+        <Parameter ID="Address" Value="6" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutputDelayed00">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="10" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutputDelayed01">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="16" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutputDelayed02">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="24" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="AnalogOutputDelayed03">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="26" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="INT" />
+      </Channel>
+      <Channel ID="OutputDelayConfig00">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="12" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="OutputDelayConfig01">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="18" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="AnalogOutputLatchTime00">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="14" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="AnalogOutputLatchTime01">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="22" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="Error">
+        <Filter Value="FunctionModel='FunctionModel01'" />
+        <Parameter ID="Address" Value="20" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="ConfigOutput01">
+        <Filter Value="IS_RUNTIME='1'" />
+        <Parameter ID="Ext" Value="/NOTCYCLIC" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="Offset">
+        <Filter Value="IS_RUNTIME='1'" />
+        <Parameter ID="Ext" Value="/NOTCYCLIC" />
+        <Parameter ID="Address" Value="28" Type="UDINT" />
+        <Parameter ID="Direction" Value="OUT" />
+        <Parameter ID="Type" Value="UINT" />
+      </Channel>
+      <Channel ID="BusModuleId">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000180" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModeOfOperation">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000181" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="USINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModeOfOperationChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000181" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfResets">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000182" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfResetsChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000182" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfInits">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000183" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfInitsChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000183" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfFwUpdates">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000184" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="NrOfFwUpdatesChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000184" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModuleNoComm">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000185" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModuleNoCommChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000185" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModuleCommError">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0x80000186" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DINT" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+      <Channel ID="ModuleCommErrorChangeTime">
+        <Filter Value="NOT (ARIOMasterBus='CANIO') AND (MasterIF::X2XMode!='1')" />
+        <Parameter ID="Ext" Value="/INFO" />
+        <Parameter ID="Address" Value="0xC0000186" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="DATE_AND_TIME" />
+        <Parameter ID="Diagnose" Value="/DIAG" />
+      </Channel>
+    </Resource>
+  </Hardware>
   <Hardware Family="10" ID="X20CP1382" Modno="55995" UseType="1">
     <Parameter ID="Transparent" Value="1" Type="UDINT" />
     <Parameter ID="HwcCpuSlot" Value="0" Type="UDINT" />

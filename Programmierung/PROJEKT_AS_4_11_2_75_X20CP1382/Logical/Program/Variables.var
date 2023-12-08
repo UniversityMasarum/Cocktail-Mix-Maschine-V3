@@ -1,8 +1,5 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	speedTreadmill : INT;
+	directionTreadmillleft : INT;
+	directionTreadmillright : INT;
 END_VAR
