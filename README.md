@@ -30,4 +30,6 @@ Komponententests und Machbarkeitsstudien
 
 -please ask if you have any questions
 
-- for research
+-for research
+
+-don't steal my cookies
