@@ -2,4 +2,7 @@ VAR
 	speedTreadmill : INT;
 	directionTreadmillleft : INT;
 	directionTreadmillright : INT;
+	inductiveSensor1_DI : BOOL;
+	inductiveSensor2_DI : BOOL;
+	peristalticPump1_AO : INT;
 END_VAR

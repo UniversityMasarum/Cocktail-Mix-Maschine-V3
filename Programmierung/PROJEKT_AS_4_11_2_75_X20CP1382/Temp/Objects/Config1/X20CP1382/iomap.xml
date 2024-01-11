@@ -154,9 +154,11 @@
 </LN>
 <LN ID="%IX.X1.DigitalInput01" Type="BOOL">
 <Prod Device="X1" DPName="DigitalInput01" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Program:inductiveSensor1_DI" Kind="pv" Inverted="1"/>
 </LN>
 <LN ID="%IX.X1.DigitalInput02" Type="BOOL">
 <Prod Device="X1" DPName="DigitalInput02" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Program:inductiveSensor2_DI" Kind="pv"/>
 </LN>
 <LN ID="%IX.X1.DigitalInput03" Type="BOOL">
 <Prod Device="X1" DPName="DigitalInput03" Kind="io"/>
@@ -318,6 +320,7 @@
 <Cons Device="IF6.ST1" DPName="AnalogOutput03" Kind="io"/>
 </LN>
 <LN ID="%QW.IF6.ST1.AnalogOutput04" Type="INT">
+<Prod Device="TC#4-CPYDEV" DPName="::Program:peristalticPump1_AO" Kind="pv"/>
 <Cons Device="IF6.ST1" DPName="AnalogOutput04" Kind="io"/>
 </LN>
 <LN ID="%IW.IF6.ST1.BusModuleId" Type="UINT">

@@ -1,8 +1,8 @@
 /* Durch Automation Studio generierte Headerdatei*/
 /* Nicht bearbeiten! */
 
-#ifndef _LIBRARIES_20231208153804_
-#define _LIBRARIES_20231208153804_
+#ifndef _LIBRARIES_20240111145106_
+#define _LIBRARIES_20240111145106_
 
 __asm__(".section \".plc\"");
 
@@ -461,5 +461,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20231208153804_ */
+#endif /* _LIBRARIES_20240111145106_ */
 
