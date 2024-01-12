@@ -166,6 +166,7 @@
 </LN>
 <LN ID="%IW.X1.AnalogInput01" Type="INT">
 <Prod Device="X1" DPName="AnalogInput01" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Program:Reed_Sensor_Input_1" Kind="pv"/>
 </LN>
 <LN ID="%IW.X1.AnalogInput02" Type="INT">
 <Prod Device="X1" DPName="AnalogInput02" Kind="io"/>

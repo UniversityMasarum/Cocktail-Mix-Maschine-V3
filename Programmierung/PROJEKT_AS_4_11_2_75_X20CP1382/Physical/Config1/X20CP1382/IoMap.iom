@@ -2,4 +2,5 @@ VAR_CONFIG
 	::Program:speedTreadmill AT %QW."X20AO4632".AnalogOutput01;
 	::Program:directionTreadmillright AT %QW."X20AO4632".AnalogOutput02;
 	::Program:directionTreadmillleft AT %QW."X20AO4632".AnalogOutput03;
+	::Program:Reed_Sensor_Input_1 AT %IW."X1".AnalogInput01;
 END_VAR

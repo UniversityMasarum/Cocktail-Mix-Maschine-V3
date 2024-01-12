@@ -2,4 +2,5 @@ VAR
 	speedTreadmill : INT;
 	directionTreadmillleft : INT;
 	directionTreadmillright : INT;
+	Reed_Sensor_Input_1 : INT;
 END_VAR

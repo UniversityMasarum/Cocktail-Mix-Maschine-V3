@@ -4,7 +4,8 @@ PROGRAM _CYCLIC
 	// 32000 = 14,6V
 	// 10V = 
 	speedTreadmill := 30000;
-	//directionTreadmillleft := 25000;
+	directionTreadmillleft := 25000;
 	//directionTreadmillright := 25000;
-	//speedTreadmill := -30000;
+	speedTreadmill := -4000;
+	
 END_PROGRAM
