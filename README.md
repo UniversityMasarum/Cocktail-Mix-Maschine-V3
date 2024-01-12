@@ -9,7 +9,7 @@ Im Rahmen dieses Moduls wird diese Cocktailmixmaschine realisiert, die Cocktails
 
 # Hardware
 Als feste Voraussetzung wird verlangt, dass die Kompakt-SPS X20CP1382 von der Firma B&R verwendet wird.
-Die Sensor- und Aktorenauswahl ist den Studenten freigestellt, solange diese im Rahmen des Budgets sind.
+Die Sensor- und Aktorenauswahl ist den Studenten freigestellt, solange diese im Rahmen des Budgets sind. Eine Eismaschine soll verwendet werden!
 
 
 # Software 
@@ -30,4 +30,6 @@ Komponententests und Machbarkeitsstudien
 
 -please ask if you have any questions
 
-- for research
+-for research
+
+-don't steal my cookies

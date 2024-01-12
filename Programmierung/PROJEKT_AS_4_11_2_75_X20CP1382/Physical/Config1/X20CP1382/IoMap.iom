@@ -2,5 +2,11 @@ VAR_CONFIG
 	::Program:speedTreadmill AT %QW."X20AO4632".AnalogOutput01;
 	::Program:directionTreadmillright AT %QW."X20AO4632".AnalogOutput02;
 	::Program:directionTreadmillleft AT %QW."X20AO4632".AnalogOutput03;
+<<<<<<< HEAD
 	::Program:Reed_Sensor_Input_1 AT %IW."X1".AnalogInput01;
+=======
+	::Program:inductiveSensor1_DI AT %IX."X1".DigitalInput01 INVERSE;
+	::Program:inductiveSensor2_DI AT %IX."X1".DigitalInput02;
+	::Program:peristalticPump1_AO AT %QW."X20AO4632".AnalogOutput04;
+>>>>>>> a31492344b22443c312620c2728d9b959337b792
 END_VAR
