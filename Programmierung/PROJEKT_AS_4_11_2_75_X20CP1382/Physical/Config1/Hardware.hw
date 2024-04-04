@@ -32,6 +32,7 @@
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="X20CP1382_Config1" />
+    <Parameter ID="Simulation" Value="1" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />

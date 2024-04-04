@@ -2,5 +2,5 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	speedTreadmill := 30000;
+	currentStation_var := 0;
 END_PROGRAM
