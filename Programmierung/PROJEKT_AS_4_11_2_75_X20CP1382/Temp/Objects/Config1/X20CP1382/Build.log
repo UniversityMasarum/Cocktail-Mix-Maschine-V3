@@ -1,5 +1,0 @@
-X20CP1382 | Config1 | Build
-Systemfehler
-   bei BR.AS.AnalyseProject.DataClasses.DataAndTools.StopExecutionOnFatalErrorAndUserCancelation()
-   bei BR.AS.AnalyseProject.Comparison.CompareSettingsAndObjects()
-   bei BR.AS.AnalyseProject.Analyse.Execute()
