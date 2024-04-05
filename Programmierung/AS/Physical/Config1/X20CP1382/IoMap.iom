@@ -1,6 +1,6 @@
 VAR_CONFIG
-	::Program:speedTreadmill AT %QW."X20AO4632".AnalogOutput01;
+	::Program:speedTreadmill_var AT %QW."X20AO4632".AnalogOutput01;
 	::Program:directionTreadmillright_DO AT %QW."X20AO4632".AnalogOutput02;
-	::Program:directionTreadmillleft_DO AT %QW."X20AO4632".AnalogOutput03;
+	::Program:directionThreadmillleft_DO AT %QW."X20AO4632".AnalogOutput03;
 	::Program:Becherspender_DO AT %QX."X3".DigitalOutput12;
 END_VAR

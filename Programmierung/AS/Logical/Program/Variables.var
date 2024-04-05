@@ -1,6 +1,6 @@
 VAR
 	speedTreadmill_var : INT;
-	directionTreadmillleft_DO : INT;
+	directionThreadmillleft_DO : INT;
 	directionTreadmillright_DO : INT;
 	inductiveSensorEisstation_DI : BOOL;
 	inductiveSensorZitronenspende_DI : BOOL;

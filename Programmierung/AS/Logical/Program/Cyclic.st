@@ -7,7 +7,7 @@
 	//speedTreadmill := -30000;
 PROGRAM _CYCLIC
 	
-	speedTreadmill := 30000;
+	speedTreadmill_var := 30000;
 	CASE currentStation_var OF
 		stationBecherspender_var:
 			IF inductiveSensorBecherentnahme_DI = TRUE THEN
@@ -69,8 +69,8 @@ PROGRAM _CYCLIC
 			counterCocktailmixer_var := 0;
 													
 			IF buttonAusgabe_DI = TRUE THEN
-				directionTreadmillleft_DO := 25000;	
-				currentSation_var := 0;
+				directionThreadmillleft_DO := 25000;	
+				currentStation_var := 0;
 			END_IF
 	END_CASE
 
