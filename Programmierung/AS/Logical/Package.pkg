@@ -6,5 +6,6 @@
     <Object Type="File" Description="Globale Variablen">Global.var</Object>
     <Object Type="Package" Description="Globale Bibliotheken">Libraries</Object>
     <Object Type="Program" Language="IEC">Program</Object>
+    <Object Type="Library" Language="IEC">Library</Object>
   </Objects>
 </Package>
