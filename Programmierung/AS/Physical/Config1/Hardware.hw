@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.12.2.93 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="6PPT30.0702-20W" Type="6PPT30.0702-20W" Version="1.3.5.0">
+    <Connection Connector="ETH1" TargetModule="X20CP1382" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="PasswordVNC" Value="" />
+    <Parameter ID="PasswordCIFS" Value="" />
+    <Parameter ID="PasswordService" Value="" />
+    <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.0702-20W.dis" />
+  </Module>
   <Module Name="X20AO4632" Type="X20AO4632" Version="1.2.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
@@ -33,6 +43,8 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="X20CP1382_Config1" />
     <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />

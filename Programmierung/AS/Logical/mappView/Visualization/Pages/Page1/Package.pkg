@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Cocktails">Page.page</Object>
+    <Object Type="File">Main1.content</Object>
+    <Object Type="File">Header1.content</Object>
+  </Objects>
+</Package>

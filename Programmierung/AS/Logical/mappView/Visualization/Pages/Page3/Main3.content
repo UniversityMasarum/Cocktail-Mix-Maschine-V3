@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="MainContent3" height="420" width="720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="0" left="0" width="400" height="420" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="20" left="20" width="160" height="60" zIndex="0" text="Pumpe Orangensaft" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="20" width="160" height="60" zIndex="1" text="Pumpe Limettensaft" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="180" left="20" width="160" height="60" zIndex="2" text="Pumpe Zitronenlimonade" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="260" left="20" width="160" height="60" zIndex="3" text="Pumpe Rum" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="340" left="20" width="160" height="60" zIndex="4" text="Pumpe Gin" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton6" top="20" left="220" width="160" height="60" zIndex="5" text="Pumpe Wodka" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton7" top="100" left="220" width="160" height="60" zIndex="6" text="Pumpe Tequila" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton8" top="180" left="220" width="160" height="60" zIndex="7" text="Pumpe BlueCaracao" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton9" top="260" left="220" width="160" height="60" zIndex="8" text="Pumpe Tonic" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton10" top="340" left="220" width="160" height="60" zIndex="9" text="ToggleButton10" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar2" top="60" left="420" height="120" zIndex="1">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton1" top="0" left="20" zIndex="0" text="keine Bewegung" value="true" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton2" top="40" left="20" zIndex="1" text="rechts" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="RadioButton3" top="80" left="20" zIndex="2" text="links" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="420" width="160" zIndex="2" text="Laufband Richtung" textAlign="center" />
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar3" top="240" left="420" height="60" zIndex="3">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton11" top="0" left="0" width="200" height="60" zIndex="0" text="Pumpen rückwärts" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="200" left="440" width="160" zIndex="4" text="Pumpe Rückwärts" textAlign="center" />
+  </Widgets>
+</Content>

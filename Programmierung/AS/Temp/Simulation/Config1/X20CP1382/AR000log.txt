@@ -1,0 +1,21 @@
+Mon Apr  8 18:04:17 2024
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Mon Apr  8 18:04:17 2024
+No ARsim registration found!
+
+Mon Apr  8 18:04:17 2024
+InstanceName: 0000000a83a2eb75
+
+Mon Apr  8 18:04:17 2024
+WorkingDirectory: C:\Users\Johannes\Desktop\Graveyard\Cocktail-Mix-Maschine-V3\Programmierung\AS\Temp\Simulation\Config1\X20CP1382\
+
+Mon Apr  8 18:04:17 2024
+COMMAND_COLDSTART
+
+Mon Apr  8 18:04:19 2024
+Version: D4.83
+
+Mon Apr  8 18:05:04 2024
+COMMAND_TERMINATE
+
