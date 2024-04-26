@@ -1,5 +1,4 @@
 VAR
-	speedTreadmill_var : INT;
 	directionThreadmillleft_DO : INT;
 	directionTreadmillright_DO : INT;
 	inductiveSensorEisstation_DI : BOOL;
@@ -13,16 +12,7 @@ VAR
 	counterZitronenspender_var : USINT;
 	counterCocktailmixer_var : USINT;
 	counterBecherentnahme_var : USINT;
-	pumpeOrangensaft_DO : BOOL;
-	pumpeLimettensaft_DO : BOOL;
 	Becherspender_DO : BOOL;
-	pumpeZitronenlimonade_DO : BOOL;
-	pumpeRum_DO : BOOL;
-	pumpeGin_DO : BOOL;
-	pumpeWodka_DO : BOOL;
-	pumpeTequila_DO : BOOL;
-	pumpeBlueCuracao_DO : BOOL;
-	pumpeTonic_DO : BOOL;
 END_VAR
 VAR CONSTANT
 	stationCocktailmixer_var : USINT := 3;
@@ -35,4 +25,5 @@ VAR
 	currentStation_var : USINT := 0;
 	eisspenderAktivieren_DO : BOOL;
 	zitronenspenderAktivieren_DO : BOOL;
+	speedTreadmill_var : INT;
 END_VAR

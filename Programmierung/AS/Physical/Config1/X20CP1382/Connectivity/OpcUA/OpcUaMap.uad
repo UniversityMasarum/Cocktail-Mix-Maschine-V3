@@ -9,16 +9,19 @@
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Globale Variablen">
+        <Variable Name="pumpeBig1_DO" />
+        <Variable Name="pumpeBig2_DO" />
+        <Variable Name="pumpeBig3_DO" />
+        <Variable Name="pumpeBig4_DO" />
+        <Variable Name="pumpeSmall1_DO" />
+        <Variable Name="pumpeSmall2_DO" />
+        <Variable Name="pumpeSmall3_DO" />
+        <Variable Name="pumpeSmall4_DO" />
+        <Variable Name="pumpeSmall5_DO" />
+        <Variable Name="pumpeSmall6_DO" />
+      </GlobalVariables>
       <Task Name="Program">
-        <Variable Name="pumpeBlueCuracao_DO" />
-        <Variable Name="pumpeGin_DO" />
-        <Variable Name="pumpeLimettensaft_DO" />
-        <Variable Name="pumpeOrangensaft_DO" />
-        <Variable Name="pumpeRum_DO" />
-        <Variable Name="pumpeTequila_DO" />
-        <Variable Name="pumpeTonic_DO" />
-        <Variable Name="pumpeWodka_DO" />
-        <Variable Name="pumpeZitronenlimonade_DO" />
         <Variable Name="directionTreadmillright_DO" />
         <Variable Name="directionThreadmillleft_DO" />
       </Task>

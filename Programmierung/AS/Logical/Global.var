@@ -1,8 +1,12 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	pumpeBig1_DO : BOOL;
+	pumpeBig2_DO : BOOL;
+	pumpeBig3_DO : BOOL;
+	pumpeBig4_DO : BOOL;
+	pumpeSmall1_DO : BOOL;
+	pumpeSmall2_DO : BOOL;
+	pumpeSmall3_DO : BOOL;
+	pumpeSmall4_DO : BOOL;
+	pumpeSmall5_DO : BOOL;
+	pumpeSmall6_DO : BOOL;
 END_VAR

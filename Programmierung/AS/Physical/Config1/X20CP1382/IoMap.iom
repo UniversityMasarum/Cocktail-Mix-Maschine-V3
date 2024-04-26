@@ -3,14 +3,15 @@ VAR_CONFIG
 	::Program:directionTreadmillright_DO AT %QW."X20AO4632".AnalogOutput02;
 	::Program:directionThreadmillleft_DO AT %QW."X20AO4632".AnalogOutput03;
 	::Program:Becherspender_DO AT %QX."X3".DigitalOutput12;
-	::Program:pumpeOrangensaft_DO AT %QX."X3".DigitalOutput01;
-	::Program:pumpeLimettensaft_DO AT %QX."X3".DigitalOutput02;
-	::Program:pumpeZitronenlimonade_DO AT %QX."X3".DigitalOutput03;
-	::Program:pumpeRum_DO AT %QX."X3".DigitalOutput04;
-	::Program:pumpeGin_DO AT %QX."X3".DigitalOutput05;
-	::Program:pumpeWodka_DO AT %QX."X3".DigitalOutput06;
-	::Program:pumpeTequila_DO AT %QX."X3".DigitalOutput07;
-	::Program:pumpeBlueCuracao_DO AT %QX."X3".DigitalOutput08;
-	::Program:pumpeTonic_DO AT %QX."X3".DigitalOutput09;
+	::pumpeBig1_DO AT %QX."X3".DigitalOutput01;
+	::pumpeBig2_DO AT %QX."X3".DigitalOutput02;
+	::pumpeBig3_DO AT %QX."X3".DigitalOutput03;
+	::pumpeBig4_DO AT %QX."X3".DigitalOutput04;
+	::pumpeSmall1_DO AT %QX."X3".DigitalOutput05;
+	::pumpeSmall2_DO AT %QX."X3".DigitalOutput06;
+	::pumpeSmall3_DO AT %QX."X3".DigitalOutput07;
+	::pumpeSmall4_DO AT %QX."X3".DigitalOutput08;
+	::pumpeSmall5_DO AT %QX."X3".DigitalOutput09;
 	::Program:zitronenspenderAktivieren_DO AT %QX."X3".DigitalOutput11;
+	::pumpeSmall6_DO AT %QX."X3".DigitalOutput10;
 END_VAR
