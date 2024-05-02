@@ -24,6 +24,9 @@
       <Task Name="Program">
         <Variable Name="directionTreadmillright_DO" />
         <Variable Name="directionThreadmillleft_DO" />
+        <Variable Name="directionThreadmill_right_var" />
+        <Variable Name="directionThreadmill_left_var" />
+        <Variable Name="reingigunsmodus_var" />
       </Task>
     </Module>
   </DefaultView>

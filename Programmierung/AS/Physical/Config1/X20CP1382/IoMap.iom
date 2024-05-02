@@ -1,8 +1,5 @@
 VAR_CONFIG
-	::Program:speedTreadmill_var AT %QW."X20AO4632".AnalogOutput01;
-	::Program:directionTreadmillright_DO AT %QW."X20AO4632".AnalogOutput02;
-	::Program:directionThreadmillleft_DO AT %QW."X20AO4632".AnalogOutput03;
-	::Program:Becherspender_DO AT %QX."X3".DigitalOutput12;
+	::Program:directionThreadmillleft_DO AT %QX."X3".DigitalOutput12;
 	::pumpeBig1_DO AT %QX."X3".DigitalOutput01;
 	::pumpeBig2_DO AT %QX."X3".DigitalOutput02;
 	::pumpeBig3_DO AT %QX."X3".DigitalOutput03;
@@ -12,6 +9,11 @@ VAR_CONFIG
 	::pumpeSmall3_DO AT %QX."X3".DigitalOutput07;
 	::pumpeSmall4_DO AT %QX."X3".DigitalOutput08;
 	::pumpeSmall5_DO AT %QX."X3".DigitalOutput09;
-	::Program:zitronenspenderAktivieren_DO AT %QX."X3".DigitalOutput11;
+	::Program:directionTreadmillright_DO AT %QX."X3".DigitalOutput11;
 	::pumpeSmall6_DO AT %QX."X3".DigitalOutput10;
+	::Program:inductiveSensorBecherspender_DI AT %IX."X2".DigitalInput01;
+	::Program:inductiveSensorEisstation_DI AT %IX."X2".DigitalInput02;
+	::Program:inductiveSensorZitronenspende_DI AT %IX."X2".DigitalInput03;
+	::Program:inductiveSensorCocktailmixer_DI AT %IX."X2".DigitalInput04;
+	::Program:inductiveSensorBecherausgabe_DI AT %IX."X2".DigitalInput05;
 END_VAR

@@ -1,29 +1,33 @@
 VAR
-	directionThreadmillleft_DO : INT;
-	directionTreadmillright_DO : INT;
-	inductiveSensorEisstation_DI : BOOL;
-	inductiveSensorZitronenspende_DI : BOOL;
-	inductiveSensorBecherausgabe_DI : BOOL;
-	inductiveSensorBecherentnahme_DI : BOOL;
-	buttonAusgabe_DI : BOOL;
-	inductiveSensorCocktailmixer_DI : BOOL;
-	counterEisstation_var : USINT;
-	counterBecherspender_var : USINT;
-	counterZitronenspender_var : USINT;
-	counterCocktailmixer_var : USINT;
-	counterBecherentnahme_var : USINT;
-	Becherspender_DO : BOOL;
+	zitronenspenderAktivieren_DO : BOOL;
 END_VAR
 VAR CONSTANT
-	stationCocktailmixer_var : USINT := 3;
-	stationBecherspender_var : USINT := 0;
 	stationZitronenspender_var : USINT := 2;
-	stationEismaschine_var : USINT := 1;
-	stationBecherentnahme_var : USINT := 4;
+	stationEismaschine_var : USINT := 1; (*Station Eismaschine als Festwerte*)
+	stationCocktailmixer_var : USINT := 3; (*Station Cocktailmixer als Festwerte*)
+	stationBecherspender_var : USINT := 0; (*Station Becherspender als Festwerte*)
+	stationBecherentnahme_var : USINT := 4; (*Station Becherentnahme als Festwerte*)
 END_VAR
 VAR
-	currentStation_var : USINT := 0;
-	eisspenderAktivieren_DO : BOOL;
-	zitronenspenderAktivieren_DO : BOOL;
-	speedTreadmill_var : INT;
+	reingigunsmodus_var : BOOL := FALSE; (*Gibt an, ob die Reinigung aktiviert wurde*)
+	inductiveSensorZitronenspende_DI : BOOL := FALSE; (*Station Zitronenspender Sensorerkennung*)
+	inductiveSensorEisstation_DI : BOOL := FALSE; (*Station Eisstation Sensorerkennung*)
+	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
+	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
+	inductiveSensorBecherspender_DI : BOOL := FALSE; (*Station Becherspender Sensorerkennung*)
+	eisspenderAktivieren_DO : BOOL; (*Aktiviert den Eisspender --> Arduino*)
+	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
+	directionThreadmill_right_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
+	directionThreadmill_left_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
+	directionThreadmillleft_DO : BOOL; (*Steuert das Laufband nach links*)
+	currentStation_var : USINT := 0; (*Läuft die einzelnen Sationen ab*)
+	counterZitronenspender_var : USINT; (*Setzt die Zeit für die Sation Zitronenspender*)
+	counterEisstation_var : USINT; (*Setzt die Zeit für die Sation Eisstation*)
+	counterCocktailmixer_var : USINT; (*Setzt die Zeit für die Sation Cocktailmixer*)
+	counterBecherspender_var : USINT; (*Setzt die Zeit für die Sation Becherspender*)
+	counterBecherentnahme_var : USINT; (*Setzt die Zeit für die Station Becherentnahme*)
+	buttonAusgabe_DI : BOOL; (*Wenn der knopf gedrückt wurde wurde der Becher entnommen*)
+	Becherspender_DO : BOOL; (*Aktiviert den Becherspender --> Arduino*)
+	cocktailChosen : BOOL := TRUE; (*Gibt an, ob ein Cocktail gewählt wurde*)
+	BecherAusgabe_var : USINT := 0;
 END_VAR
