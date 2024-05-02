@@ -81,20 +81,23 @@ PROGRAM _CYCLIC
 						zitronenspenderAktivieren_DO := TRUE;
 						counterCocktailmixer_var := counterCocktailmixer_var + 1;
 			
-						IF counterCocktailmixer_var > 100 THEN
+					// IF counterCocktailmixer_var > 100 THEN
+					//	IF cocktailFinished_var = TRUE THEN
+						IF pumpeBig1_DO = 0 AND pumpeBig2_DO = 0 AND pumpeBig3_DO = 0 AND pumpeBig4_DO = 0 AND pumpeSmall1_DO = 0 AND pumpeSmall2_DO = 0 AND pumpeSmall3_DO = 0 AND pumpeSmall4_DO = 0 AND  pumpeSmall5_DO = 0 AND  pumpeSmall6_DO = 0 THEN
 							directionTreadmillright_DO := 1;
 							zitronenspenderAktivieren_DO := FALSE;
 							currentStation_var := currentStation_var + 1;
 						END_IF
 					END_IF								
 															
-				stationBecherentnahme_var:
-					IF BecherAusgabe_var = 0 THEN
+			stationBecherentnahme_var:
+				IF BecherAusgabe_var = 0 THEN
 						directionTreadmillright_DO := 1;
 					END_IF
 				
 					IF inductiveSensorBecherausgabe_DI = FALSE THEN
 						BecherAusgabe_var := 1;
+						cocktailFinished_var := 0;
 					END_IF
 					IF BecherAusgabe_var = 1 THEN
 						directionTreadmillright_DO := 0;

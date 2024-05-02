@@ -9,4 +9,5 @@ VAR
 	pumpeSmall4_DO : BOOL;
 	pumpeSmall5_DO : BOOL;
 	pumpeSmall6_DO : BOOL;
+	cocktailFinished_var : BOOL;
 END_VAR

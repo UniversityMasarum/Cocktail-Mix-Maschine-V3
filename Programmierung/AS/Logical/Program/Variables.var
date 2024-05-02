@@ -29,5 +29,5 @@ VAR
 	buttonAusgabe_DI : BOOL; (*Wenn der knopf gedrückt wurde wurde der Becher entnommen*)
 	Becherspender_DO : BOOL; (*Aktiviert den Becherspender --> Arduino*)
 	cocktailChosen : BOOL := TRUE; (*Gibt an, ob ein Cocktail gewählt wurde*)
-	BecherAusgabe_var : USINT := 0;
+	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2*)
 END_VAR

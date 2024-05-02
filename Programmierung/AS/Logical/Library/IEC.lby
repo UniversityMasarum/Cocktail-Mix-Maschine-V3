@@ -5,6 +5,5 @@
     <File Description="Exported data types">Types.typ</File>
     <File Description="Exported constants">Constants.var</File>
     <File Description="Exported functions and function blocks">Library.fun</File>
-    <File>PumpeOrangensaft.st</File>
   </Files>
 </Library>
