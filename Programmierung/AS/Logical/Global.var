@@ -10,4 +10,8 @@ VAR
 	pumpeSmall5_DO : BOOL;
 	pumpeSmall6_DO : BOOL;
 	cocktailFinished_var : BOOL;
+	cocktailChosen_var : BOOL := FALSE; (*Gibt an, ob ein Cocktail gewählt wurde*)
+	counterCocktailmixer_var : UINT := 0; (*Wenn Station erstes mal angefahren wird Cocktail ausgegeben*)
+	reingigunsmodus_var : BOOL := FALSE; (*Gibt an, ob die Reinigung aktiviert wurde*)
+	cocktail_started : BOOL; (*Triggert die Pumpen für den aktuellen Cocktail*)
 END_VAR

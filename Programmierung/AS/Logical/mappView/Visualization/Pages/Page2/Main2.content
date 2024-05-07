@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="MainContent2" height="420" width="720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="Button1" top="20" left="60" width="160" height="60" zIndex="0" text="Button1" />
-    <Widget xsi:type="widgets.brease.Button" id="Button2" top="100" left="60" width="160" height="60" zIndex="1" text="Button2" />
-    <Widget xsi:type="widgets.brease.Button" id="Button3" top="180" left="60" width="160" height="60" zIndex="2" text="Button3" />
-    <Widget xsi:type="widgets.brease.Button" id="Button4" top="260" left="60" width="160" height="60" zIndex="3" text="Button4" />
-    <Widget xsi:type="widgets.brease.Button" id="Button5" top="340" left="60" width="160" height="60" zIndex="4" text="Button5" />
-    <Widget xsi:type="widgets.brease.Button" id="Button6" top="20" left="240" width="160" height="60" zIndex="5" text="Button6" />
-    <Widget xsi:type="widgets.brease.Button" id="Button7" top="100" left="240" width="160" height="60" zIndex="6" text="Button7" />
-    <Widget xsi:type="widgets.brease.Button" id="Button8" top="180" left="240" width="160" height="60" zIndex="7" text="Button8" />
-    <Widget xsi:type="widgets.brease.Button" id="Button9" top="260" left="240" width="160" height="60" zIndex="8" text="Button9" />
-    <Widget xsi:type="widgets.brease.Button" id="Button10" top="340" left="240" width="160" height="60" zIndex="9" text="Button10" />
+	<Widgets>
+		
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="20" left="40" width="140" height="60" zIndex="0" text="Wodka Cola" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="40" width="140" height="60" zIndex="1" text="Kirsch-Cola" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="180" left="40" width="140" height="60" zIndex="2" text="Gentleben" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="260" left="40" width="140" height="60" zIndex="3" text="Wodka O-Saft" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="340" left="40" width="140" height="60" zIndex="4" text="Grüne Wiese" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton6" top="20" left="220" width="140" height="60" zIndex="5" text="Angelblue" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton7" top="100" left="220" width="140" height="60" zIndex="6" text="Brassmonkey" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton8" top="180" left="220" width="140" height="60" zIndex="7" text="Kiba" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton9" top="260" left="220" width="140" height="60" zIndex="8" text="Rum Cola" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton10" top="340" left="220" width="140" height="60" zIndex="9" text="Bich" />
   </Widgets>
 </Content>

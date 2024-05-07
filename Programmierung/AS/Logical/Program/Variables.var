@@ -4,12 +4,11 @@ END_VAR
 VAR CONSTANT
 	stationZitronenspender_var : USINT := 2;
 	stationEismaschine_var : USINT := 1; (*Station Eismaschine als Festwerte*)
-	stationCocktailmixer_var : USINT := 3; (*Station Cocktailmixer als Festwerte*)
+	stationCocktailmixer_var : UINT := 3; (*Station Cocktailmixer als Festwerte*)
 	stationBecherspender_var : USINT := 0; (*Station Becherspender als Festwerte*)
 	stationBecherentnahme_var : USINT := 4; (*Station Becherentnahme als Festwerte*)
 END_VAR
 VAR
-	reingigunsmodus_var : BOOL := FALSE; (*Gibt an, ob die Reinigung aktiviert wurde*)
 	inductiveSensorZitronenspende_DI : BOOL := FALSE; (*Station Zitronenspender Sensorerkennung*)
 	inductiveSensorEisstation_DI : BOOL := FALSE; (*Station Eisstation Sensorerkennung*)
 	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
@@ -21,13 +20,12 @@ VAR
 	directionThreadmill_left_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
 	directionThreadmillleft_DO : BOOL; (*Steuert das Laufband nach links*)
 	currentStation_var : USINT := 0; (*Läuft die einzelnen Sationen ab*)
-	counterZitronenspender_var : USINT; (*Setzt die Zeit für die Sation Zitronenspender*)
-	counterEisstation_var : USINT; (*Setzt die Zeit für die Sation Eisstation*)
-	counterCocktailmixer_var : USINT; (*Setzt die Zeit für die Sation Cocktailmixer*)
-	counterBecherspender_var : USINT; (*Setzt die Zeit für die Sation Becherspender*)
-	counterBecherentnahme_var : USINT; (*Setzt die Zeit für die Station Becherentnahme*)
-	buttonAusgabe_DI : BOOL; (*Wenn der knopf gedrückt wurde wurde der Becher entnommen*)
+	counterZitronenspender_var : USINT := 0; (*Setzt die Zeit für die Sation Zitronenspender*)
+	counterEisstation_var : USINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
+	counterBecherspender_var : USINT := 0; (*Setzt die Zeit für die Sation Becherspender*)
+	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
+	buttonAusgabe_DI : BOOL := FALSE; (*Wenn der knopf gedrückt wurde wurde der Becher entnommen*)
 	Becherspender_DO : BOOL; (*Aktiviert den Becherspender --> Arduino*)
-	cocktailChosen : BOOL := TRUE; (*Gibt an, ob ein Cocktail gewählt wurde*)
 	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2*)
+	stationPercentage_var : USINT := 0; (*gibt in der Visualisierung den aktuellen Progress in % aus*)
 END_VAR

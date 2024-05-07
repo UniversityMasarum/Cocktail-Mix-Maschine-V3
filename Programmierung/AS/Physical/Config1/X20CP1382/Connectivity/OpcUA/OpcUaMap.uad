@@ -20,13 +20,27 @@
         <Variable Name="pumpeSmall4_DO" />
         <Variable Name="pumpeSmall5_DO" />
         <Variable Name="pumpeSmall6_DO" />
+        <Variable Name="reingigunsmodus_var" />
       </GlobalVariables>
       <Task Name="Program">
         <Variable Name="directionTreadmillright_DO" />
         <Variable Name="directionThreadmillleft_DO" />
         <Variable Name="directionThreadmill_right_var" />
         <Variable Name="directionThreadmill_left_var" />
-        <Variable Name="reingigunsmodus_var" />
+        <Variable Name="currentStation_var" />
+        <Variable Name="stationPercentage_var" />
+      </Task>
+      <Task Name="Program1">
+        <Variable Name="angelblue_var" />
+        <Variable Name="bich_var" />
+        <Variable Name="brassmonkey_var" />
+        <Variable Name="cocktail_var" />
+        <Variable Name="gentleben_var" />
+        <Variable Name="gruenewiese_var" />
+        <Variable Name="kiba_var" />
+        <Variable Name="kirschcola_var" />
+        <Variable Name="rumcola_var" />
+        <Variable Name="wodka_cola_var" />
       </Task>
     </Module>
   </DefaultView>

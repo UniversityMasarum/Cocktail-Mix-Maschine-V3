@@ -8,5 +8,6 @@
     <Object Type="Package">Page2</Object>
     <Object Type="Package">Page3</Object>
     <Object Type="Package">Page4</Object>
+    <Object Type="Package">Page5</Object>
   </Objects>
 </Package>

@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="12/08/2023 14:04:20" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/07/2024 17:32:48" />
   </TimeStamps>
   <Modules>
     <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
@@ -15,7 +15,21 @@
     <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
     <Module Name="X1" Type="X1" X="225" Y="103" />
     <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="6PPT30.0702-20W" Type="6PPT30.0702-20W" X="100" Y="-56" />
   </Modules>
-  <Links />
+  <Links>
+    <Link From="6PPT30.0702-20W" To="X20CP1382" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
+      <Point X="163.299988" Y="46" />
+      <Point X="163.299988" Y="46" />
+      <Point X="163.299988" Y="51" />
+      <Point X="163.299988" Y="65" />
+      <Point X="95" Y="65" />
+      <Point X="95" Y="205" />
+      <Point X="134" Y="205" />
+      <Point X="134" Y="203" />
+      <Point X="134" Y="188" />
+      <Point X="134" Y="188" />
+    </Link>
+  </Links>
   <InfoElements />
 </BR.AS.HardwareTopology>
