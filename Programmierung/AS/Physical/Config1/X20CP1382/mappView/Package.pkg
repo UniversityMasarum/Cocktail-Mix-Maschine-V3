@@ -6,5 +6,6 @@
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="File">pumpen.binding</Object>
     <Object Type="File">laufband.binding</Object>
+    <Object Type="File">EventBinding.eventbinding</Object>
   </Objects>
 </Package>

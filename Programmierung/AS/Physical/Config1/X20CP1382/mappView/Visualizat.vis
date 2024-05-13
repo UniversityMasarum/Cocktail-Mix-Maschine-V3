@@ -17,7 +17,8 @@
 		<BindingsSet refId="pumpen_0" />
 		<!-- include Laufband controls -->
 		<BindingsSet refId="laufband" />
-  </BindingsSets>
+	</BindingsSets>
+	
   <EventBindingsSets>
     <!--<EventBindingsSet refId="" />-->
   </EventBindingsSets>

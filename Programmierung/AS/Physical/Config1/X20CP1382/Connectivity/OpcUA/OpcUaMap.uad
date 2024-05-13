@@ -21,6 +21,7 @@
         <Variable Name="pumpeSmall5_DO" />
         <Variable Name="pumpeSmall6_DO" />
         <Variable Name="reingigunsmodus_var" />
+        <Variable Name="cocktailChosen_var" />
       </GlobalVariables>
       <Task Name="Program">
         <Variable Name="directionTreadmillright_DO" />

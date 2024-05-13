@@ -1,8 +1,13 @@
 VAR
-	zitronenspenderAktivieren_DO : BOOL;
+	zitronenspenderAktivieren_A0 : INT := 0; (*Aktiviert Zitronenspender 5V --> Arduino --> 16400*)
 END_VAR
 VAR CONSTANT
-	stationZitronenspender_var : USINT := 2;
+	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
+END_VAR
+VAR
+	stationPercentage_var : USINT := 0; (*gibt in der Visualisierung den aktuellen Progress in % aus*)
+END_VAR
+VAR CONSTANT
 	stationEismaschine_var : USINT := 1; (*Station Eismaschine als Festwerte*)
 	stationCocktailmixer_var : UINT := 3; (*Station Cocktailmixer als Festwerte*)
 	stationBecherspender_var : USINT := 0; (*Station Becherspender als Festwerte*)
@@ -12,8 +17,8 @@ VAR
 	inductiveSensorZitronenspende_DI : BOOL := FALSE; (*Station Zitronenspender Sensorerkennung*)
 	inductiveSensorEisstation_DI : BOOL := FALSE; (*Station Eisstation Sensorerkennung*)
 	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
-	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
 	inductiveSensorBecherspender_DI : BOOL := FALSE; (*Station Becherspender Sensorerkennung*)
+	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
 	eisspenderAktivieren_DO : BOOL; (*Aktiviert den Eisspender --> Arduino*)
 	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
 	directionThreadmill_right_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
@@ -24,8 +29,9 @@ VAR
 	counterEisstation_var : USINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
 	counterBecherspender_var : USINT := 0; (*Setzt die Zeit für die Sation Becherspender*)
 	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
-	buttonAusgabe_DI : BOOL := FALSE; (*Wenn der knopf gedrückt wurde wurde der Becher entnommen*)
-	Becherspender_DO : BOOL; (*Aktiviert den Becherspender --> Arduino*)
+	bechererkennungAusgabe_DI : BOOL := TRUE; (*Wenn endlageschalter nicht gedrückt ist, Becher entnommen*)
 	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2*)
-	stationPercentage_var : USINT := 0; (*gibt in der Visualisierung den aktuellen Progress in % aus*)
+	BecherspenderAktivieren_AO : INT := 0; (*Aktiviert Becherspender 5V --> Arduino --> 16400*)
+	EismaschineAktivieren_AO : INT := 0; (*Aktiviert Eismaschine 5V --> Arduino --> 16400*)
+	bechererkennungSpender_DI : BOOL := FALSE; (*Wenn endlageschalter gedrückt, Becher in Halterung*)
 END_VAR
