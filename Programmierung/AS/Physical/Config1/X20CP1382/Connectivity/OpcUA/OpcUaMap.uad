@@ -30,6 +30,7 @@
         <Variable Name="directionThreadmill_left_var" />
         <Variable Name="currentStation_var" />
         <Variable Name="stationPercentage_var" />
+        <Variable Name="resetToStart" />
       </Task>
       <Task Name="Program1">
         <Variable Name="angelblue_var" />

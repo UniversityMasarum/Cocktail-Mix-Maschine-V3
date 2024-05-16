@@ -93,5 +93,9 @@
 <Source xsi:type="opcUa" refId="::Program1:gintonic_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton3" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:resetToStart" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleButton12" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

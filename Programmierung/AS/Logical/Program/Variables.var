@@ -19,7 +19,7 @@ VAR
 	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
 	inductiveSensorBecherspender_DI : BOOL := FALSE; (*Station Becherspender Sensorerkennung*)
 	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
-	eisspenderAktivieren_DO : BOOL; (*Aktiviert den Eisspender --> Arduino*)
+	eisspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert den Eisspender --> Arduino*)
 	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
 	directionThreadmill_right_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
 	directionThreadmill_left_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
@@ -34,4 +34,5 @@ VAR
 	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
 	EismaschineAktivieren_DO : BOOL := FALSE; (*Aktiviert Eismaschine --> Arduino *)
 	bechererkennungSpender_DI : BOOL := FALSE; (*Wenn endlageschalter gedrückt, Becher in Halterung*)
+	resetToStart : BOOL := FALSE; (*Fährt wieder an den Start*)
 END_VAR

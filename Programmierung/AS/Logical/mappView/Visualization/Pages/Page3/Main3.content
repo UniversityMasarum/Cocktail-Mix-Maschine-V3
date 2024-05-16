@@ -26,6 +26,6 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch13" top="20" left="40" width="200" zIndex="14" text="Reinigungsmodus" />
-    <Widget xsi:type="widgets.brease.Button" id="Button1" top="340" left="420" width="200" height="50" zIndex="15" text="Button1" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton12" top="340" left="420" width="200" height="60" zIndex="15" text="RESET AUF START" />
   </Widgets>
 </Content>

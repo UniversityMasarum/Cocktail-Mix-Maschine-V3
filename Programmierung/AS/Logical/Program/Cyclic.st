@@ -23,7 +23,7 @@ PROGRAM _CYCLIC
 				directionThreadmillleft_DO := 0;
 				directionTreadmillright_DO := 0;
 			END_IF
-				
+			
 		ELSE
 			CASE currentStation_var OF
 				stationBecherspender_var:
@@ -148,6 +148,24 @@ PROGRAM _CYCLIC
 						cocktailChosen_var := FALSE;	
 					END_IF
 			END_CASE
+		END_IF
+
+		
+		// Zurücksetzen auf Start
+		IF resetToStart = TRUE THEN 
+			currentStation_var := 4; 
+			BecherAusgabe_var := 2;
+			
+			pumpeBig1_DO := FALSE;
+			pumpeBig2_DO := FALSE;
+			pumpeBig3_DO := FALSE;
+			pumpeBig4_DO := FALSE;
+			pumpeSmall1_DO := FALSE;
+			pumpeSmall2_DO := FALSE;
+			pumpeSmall3_DO := FALSE;
+			pumpeSmall4_DO := FALSE;
+			pumpeSmall5_DO := FALSE;
+			pumpeSmall6_DO := FALSE;
 		END_IF
 		
 	ELSE

@@ -151,47 +151,48 @@ PROGRAM _CYCLIC
 		
 		// Variable, dass Cocktail beendet wurde
 			cocktailFinished_var := TRUE;
-		END_IF	
+	END_IF	
 	
+	// Setzt den Schalter zurück
 	IF wodka_cola_var = TRUE THEN
 		cocktail_var := wodka_cola;
-		wodka_cola_var = FALSE;
+		wodka_cola_var := FALSE;
 	END_IF	
 	IF kirschcola_var = TRUE THEN
 		cocktail_var := kirschcola;
-		kirschcola_var = FALSE;
+		kirschcola_var := FALSE;
 	END_IF
 	IF testcocktail_var = TRUE THEN
 		cocktail_var := testcocktail;
-		testcocktail_var = FALSE;
+		testcocktail_var := FALSE;
 	END_IF
 	IF wodka_osaft_var = TRUE THEN
 		cocktail_var := wodka_osaft;
-		wodka_osaft_var = FALSE;
+		wodka_osaft_var := FALSE;
 	END_IF
 	IF gruenewiese_var = TRUE THEN
 		cocktail_var := gruenewiese;
-		gruenewiese_var = FALSE; 
+		gruenewiese_var := FALSE; 
 	END_IF
 	IF angelblue_var = TRUE THEN
 		cocktail_var := angelblue;
-		angelblue_var = FALSE; 
+		angelblue_var := FALSE; 
 	END_IF
 	IF brassmonkey_var = TRUE THEN
 		cocktail_var := brassmonkey;
-		brassmonkey_var = FALSE;
+		brassmonkey_var := FALSE;
 	END_IF
 	IF kiba_var = TRUE THEN
 		cocktail_var := kiba;
-		kiba_var = FALSE
+		kiba_var := FALSE;
 	END_IF
 	IF rumcola_var = TRUE THEN
 		cocktail_var := rumcola;
-		rumcola_var = FALSE;
+		rumcola_var := FALSE;
 	END_IF									
 	IF gintonic_var = TRUE THEN
 		cocktail_var := gintonic;
-		gintonic_var = FALSE; 
+		gintonic_var := FALSE; 
 	END_IF
 	
 END_PROGRAM
