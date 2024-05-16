@@ -38,15 +38,15 @@ PROGRAM _CYCLIC
 							stationPercentage_var := 10;
 							// 300 ms impuls for Arduino
 							IF counterBecherspender_var = 1 THEN
-								BecherspenderAktivieren_AO := 16400;
+								BecherspenderAktivieren_DO := TRUE;
 							ELSE
-								BecherspenderAktivieren_AO := 0;
+								BecherspenderAktivieren_DO := FALSE;
 							END_IF
 							
 							IF bechererkennungSpender_DI = TRUE THEN
 								directionTreadmillright_DO := 1;
 								currentStation_var := currentStation_var + 1;
-								BecherspenderAktivieren_AO := 0;
+								BecherspenderAktivieren_DO := FALSE;
 								stationPercentage_var := 20;
 							END_IF
 						END_IF
@@ -62,16 +62,16 @@ PROGRAM _CYCLIC
 						
 						// 300 ms impuls for arduino
 						IF counterEisstation_var < 3 THEN
-							EismaschineAktivieren_AO := 16400;
+							EismaschineAktivieren_DO := TRUE;
 						ELSE
-							EismaschineAktivieren_AO := 0;
+							EismaschineAktivieren_DO := FALSE;
 						END_IF
 								
 						IF counterEisstation_var > 150 THEN
 							directionTreadmillright_DO := 1;
 							eisspenderAktivieren_DO := FALSE;
 							currentStation_var := currentStation_var + 1;
-							EismaschineAktivieren_AO := 0; 
+							EismaschineAktivieren_DO := FALSE; 
 							stationPercentage_var := 40;
 						END_IF
 					END_IF
@@ -85,9 +85,9 @@ PROGRAM _CYCLIC
 						
 						// 300 ms impuls for arduino
 						IF counterZitronenspender_var < 3 THEN
-							zitronenspenderAktivieren_A0 := 16400;
+							zitronenspenderAktivieren_DO := TRUE;
 						ELSE
-							zitronenspenderAktivieren_A0 := 0;
+							zitronenspenderAktivieren_DO := FALSE;
 						END_IF
 							
 						IF counterZitronenspender_var > 50 THEN
@@ -152,17 +152,17 @@ PROGRAM _CYCLIC
 		
 	ELSE
 		// ON ERROR
-		pumpeBig1_DO := 0;
-		pumpeBig2_DO := 0;
-		pumpeBig3_DO := 0;
-		pumpeBig4_DO := 0;
-		pumpeSmall1_DO := 0;
-		pumpeSmall2_DO := 0;
-		pumpeSmall3_DO := 0;
-		pumpeSmall4_DO := 0;
-		pumpeSmall5_DO := 0;
-		pumpeSmall6_DO := 0;
-		directionTreadmillright_DO := 0;
-		directionThreadmillleft_DO := 0;
+		pumpeBig1_DO := FALSE;
+		pumpeBig2_DO := FALSE;
+		pumpeBig3_DO := FALSE;
+		pumpeBig4_DO := FALSE;
+		pumpeSmall1_DO := FALSE;
+		pumpeSmall2_DO := FALSE;
+		pumpeSmall3_DO := FALSE;
+		pumpeSmall4_DO := FALSE;
+		pumpeSmall5_DO := FALSE;
+		pumpeSmall6_DO := FALSE;
+		directionTreadmillright_DO := FALSE;
+		directionThreadmillleft_DO := FALSE;
 	END_IF
 END_PROGRAM

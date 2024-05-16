@@ -15,15 +15,10 @@ PROGRAM _INIT
 	ml_brassmonkey_osaft := T#240ms;
 	ml_brassmonkey_wodka := T#30ms;
 	ml_brassmonkey_rum := T#30ms;
-	ml_gentleben_osaft := T#16ms;		//der war schrecklich "Kamikaze-Shot" - wer den bestellt, kriegt nen Euro
-	ml_gentleben_wodka := T#95ms;
-	ml_gentleben_tq := T#95ms;
-	ml_gentleben_gin := T#95ms;
 	ml_kiba_banane := T#210ms;	
 	ml_kiba_kirsch := T#90ms;
-	ml_bich_osaft := T#210ms;
-	ml_bich_kirsch := T#60ms;
-	ml_bich_tq := T#30ms;
+	ml_gintonic_tonic := T#240ms;
+	ml_gintonic_gin := T#60ms;
 
 	cocktail_started := TRUE;
 	

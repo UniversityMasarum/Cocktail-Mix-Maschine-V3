@@ -4,13 +4,13 @@ TYPE
 		(
 		wodka_cola,
 		kirschcola,
-		gentleben,
+		testcocktail,
 		wodka_osaft,
 		gruenewiese,
 		angelblue,
 		brassmonkey,
 		kiba,
 		rumcola,
-		bich
-	);
+		gintonic
+		);
 END_TYPE

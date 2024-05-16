@@ -33,15 +33,16 @@
       </Task>
       <Task Name="Program1">
         <Variable Name="angelblue_var" />
-        <Variable Name="bich_var" />
         <Variable Name="brassmonkey_var" />
         <Variable Name="cocktail_var" />
-        <Variable Name="gentleben_var" />
         <Variable Name="gruenewiese_var" />
         <Variable Name="kiba_var" />
         <Variable Name="kirschcola_var" />
         <Variable Name="rumcola_var" />
         <Variable Name="wodka_cola_var" />
+        <Variable Name="wodka_osaft_var" />
+        <Variable Name="gintonic_var" />
+        <Variable Name="testcocktail_var" />
       </Task>
     </Module>
   </DefaultView>

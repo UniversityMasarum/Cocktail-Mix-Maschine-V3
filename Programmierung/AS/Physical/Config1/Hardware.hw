@@ -11,13 +11,6 @@
     <Parameter ID="PasswordService" Value="" />
     <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.0702-20W.dis" />
   </Module>
-  <Module Name="X20AO4632" Type="X20AO4632" Version="1.2.0.0">
-    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
-  </Module>
-  <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
-    <Connection Connector="X2X1" TargetModule="X20CP1382" TargetConnector="IF6" />
-  </Module>
   <Module Name="X20CP1382" Type="X20CP1382" Version="1.14.0.0">
     <Module Name="X1" Type="X1" Virtual="true" Version="1.14.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
@@ -49,4 +42,11 @@
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20cBM11" Type="X20cBM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20CP1382" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20cDO8332" Type="X20cDO8332" Version="1.4.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20cBM11" TargetConnector="SL1" />
+  </Module>
 </Hardware>

@@ -1,5 +1,5 @@
 VAR
-	zitronenspenderAktivieren_A0 : INT := 0; (*Aktiviert Zitronenspender 5V --> Arduino --> 16400*)
+	zitronenspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Zitronenspender --> Arduino *)
 END_VAR
 VAR CONSTANT
 	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
@@ -31,7 +31,7 @@ VAR
 	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
 	bechererkennungAusgabe_DI : BOOL := TRUE; (*Wenn endlageschalter nicht gedrückt ist, Becher entnommen*)
 	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2*)
-	BecherspenderAktivieren_AO : INT := 0; (*Aktiviert Becherspender 5V --> Arduino --> 16400*)
-	EismaschineAktivieren_AO : INT := 0; (*Aktiviert Eismaschine 5V --> Arduino --> 16400*)
+	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
+	EismaschineAktivieren_DO : BOOL := FALSE; (*Aktiviert Eismaschine --> Arduino *)
 	bechererkennungSpender_DI : BOOL := FALSE; (*Wenn endlageschalter gedrückt, Becher in Halterung*)
 END_VAR

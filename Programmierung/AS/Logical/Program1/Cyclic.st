@@ -108,52 +108,40 @@ PROGRAM _CYCLIC
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall3_DO:=TOF_02.Q;
 			
-				gentleben:
-					pumptime_01 :=	(ml_gentleben_osaft*144);
-					pumptime_02 :=	(ml_gentleben_wodka*400);
-					pumptime_03 := (ml_gentleben_tq*400);
-					pumptime_04 := (ml_gentleben_gin*400);
-							
+				testcocktail:
+					pumptime_01 :=	T#2s;
+					pumptime_02 :=	T#2s;
+
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig4_DO:=TOF_01.Q;
 							
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall3_DO:=TOF_02.Q;
-						
-					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
-					pumpeSmall1_DO:=TOF_03.Q;
-				
-					TOF_04(IN:= cocktail_start , PT:= pumptime_04 );
-					pumpeSmall4_DO:=TOF_04.Q;
-				
-				kiba:
-					pumptime_01 :=	(ml_kiba_banane*144);
-					pumptime_02 :=	(ml_kiba_kirsch*400);
+
+			kiba:
+				pumptime_01 :=	(ml_kiba_banane*144);
+				pumptime_02 :=	(ml_kiba_kirsch*400);
 					
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig3_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig3_DO:=TOF_01.Q;
 					
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall5_DO:=TOF_02.Q;
 			
-				bich:
-					pumptime_01 :=	(ml_bich_osaft*144);
-					pumptime_02 :=	(ml_bich_kirsch*400);
-					pumptime_03 := (ml_bich_tq*400);
+				gintonic:
+					pumptime_01 :=	(ml_gintonic_tonic*400);
+					pumptime_02 :=	(ml_gintonic_gin*400);
 							
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
+					pumpeSmall1_DO:=TOF_01.Q;
 							
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall5_DO:=TOF_02.Q;
-						
-					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
-					pumpeSmall6_DO:=TOF_03.Q;
+					pumpeSmall4_DO:=TOF_02.Q;
 
-			END_CASE
+		END_CASE
 		END_IF
 		// IF Cocktail was chosen in the visualisation --> Cocktailchosen == True
-		IF wodka_cola_var = 1 OR kirschcola_var = 1 OR gentleben_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR bich_var = 1 THEN
+		IF wodka_cola_var = 1 OR kirschcola_var = 1 OR testcocktail_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR gintonic_var = 1 THEN
 			cocktailChosen_var := TRUE;
 		END_IF
 		
@@ -171,8 +159,8 @@ PROGRAM _CYCLIC
 	IF kirschcola_var = TRUE THEN
 		cocktail_var := kirschcola;
 	END_IF
-	IF gentleben_var = TRUE THEN
-		cocktail_var := gentleben;
+	IF testcocktail_var = TRUE THEN
+		cocktail_var := testcocktail;
 	END_IF
 	IF wodka_osaft_var = TRUE THEN
 		cocktail_var := wodka_osaft;
@@ -192,8 +180,8 @@ PROGRAM _CYCLIC
 	IF rumcola_var = TRUE THEN
 		cocktail_var := rumcola;
 	END_IF									
-	IF bich_var = TRUE THEN
-		cocktail_var := bich;
+	IF gintonic_var = TRUE THEN
+		cocktail_var := gintonic;
 	END_IF
 	
 END_PROGRAM
