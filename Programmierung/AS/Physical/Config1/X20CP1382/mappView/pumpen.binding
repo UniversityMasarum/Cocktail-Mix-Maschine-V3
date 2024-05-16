@@ -43,10 +43,7 @@
 <Source xsi:type="opcUa" refId="::Program1:kirschcola_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton2" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:gentleben_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton3" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Program1:angelblue_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton6" attribute="value" />
@@ -63,10 +60,7 @@
 <Source xsi:type="opcUa" refId="::Program1:kiba_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton8" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:bich_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton10" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Program1:wodka_cola_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton1" attribute="value" />
@@ -86,6 +80,18 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Program:stationPercentage_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent5" widgetRefId="ProgressBar1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program1:testcocktail_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program1:wodka_osaft_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program1:gintonic_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton3" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>
