@@ -11,6 +11,11 @@ TYPE
 		brassmonkey,
 		kiba,
 		rumcola,
-		gintonic
-		);
+		gintonic,
+		cola,
+		osaft,
+		banane,
+		tonic,
+		sprite
+	);
 END_TYPE

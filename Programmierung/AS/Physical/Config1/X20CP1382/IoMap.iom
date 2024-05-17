@@ -16,10 +16,9 @@ VAR_CONFIG
 	::Program:inductiveSensorZitronenspende_DI AT %IX."X2".DigitalInput03;
 	::Program:inductiveSensorCocktailmixer_DI AT %IX."X2".DigitalInput04;
 	::Program:inductiveSensorBecherausgabe_DI AT %IX."X2".DigitalInput05;
-	::ERROR_DI AT %IX."X1".DigitalInput01;
 	::Program:bechererkennungSpender_DI AT %IX."X2".DigitalInput06;
 	::Program:bechererkennungAusgabe_DI AT %IX."X2".DigitalInput07;
-	::Program:BecherspenderAktivieren_DO AT %QX."X20cDO8332".DigitalOutput01;
-	::Program:EismaschineAktivieren_DO AT %QX."X20cDO8332".DigitalOutput02;
-	::Program:zitronenspenderAktivieren_DO AT %QX."X20cDO8332".DigitalOutput03;
+	::Program:BecherspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput01;
+	::Program:eisspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput02;
+	::ERROR_DI AT %IX."X2".DigitalInput08 INVERSE;
 END_VAR

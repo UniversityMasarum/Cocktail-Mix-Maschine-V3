@@ -18,10 +18,9 @@
 		<!-- include Laufband controls -->
 		<BindingsSet refId="laufband" />
 	</BindingsSets>
-	
-  <EventBindingsSets>
-    <!--<EventBindingsSet refId="" />-->
-  </EventBindingsSets>
+	<EventBindingsSets>
+    	<EventBindingsSet refId="eventbinding_1" />
+  	</EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->
   </Dialogs>

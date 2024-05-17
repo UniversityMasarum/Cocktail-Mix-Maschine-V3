@@ -19,8 +19,13 @@ PROGRAM _INIT
 	ml_kiba_kirsch := T#90ms;
 	ml_gintonic_tonic := T#240ms;
 	ml_gintonic_gin := T#60ms;
-
+	ml_osaft := T#330ms;
+	ml_cola := T#330ms;
+	ml_banane := T#330ms;
+	ml_tonic := T#330ms;
+	ml_sprite := T#330ms;
+	
 	cocktail_started := TRUE;
 	
-	cocktail_var := 1;
+	cocktail_var := 0;
 END_PROGRAM

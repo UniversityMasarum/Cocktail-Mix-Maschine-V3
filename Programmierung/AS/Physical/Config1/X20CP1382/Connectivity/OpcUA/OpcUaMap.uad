@@ -8,7 +8,7 @@
     <EngineeringUnitAliases />
   </Aliases>
   <DefaultView>
-    <Module Name="&lt;Default&gt;">
+    <Module AuditEvents="True" Name="&lt;Default&gt;">
       <GlobalVariables Name="Globale Variablen">
         <Variable Name="pumpeBig1_DO" />
         <Variable Name="pumpeBig2_DO" />
@@ -30,7 +30,9 @@
         <Variable Name="directionThreadmill_left_var" />
         <Variable Name="currentStation_var" />
         <Variable Name="stationPercentage_var" />
-        <Variable Name="resetToStart" />
+        <Variable Name="resetToStart_var" />
+        <Variable Name="passwordVisuCorrect_var" />
+        <Variable Name="passwordVisu_st" />
       </Task>
       <Task Name="Program1">
         <Variable Name="angelblue_var" />
@@ -44,6 +46,11 @@
         <Variable Name="wodka_osaft_var" />
         <Variable Name="gintonic_var" />
         <Variable Name="testcocktail_var" />
+        <Variable Name="sprite_var" />
+        <Variable Name="osaft_var" />
+        <Variable Name="cola_var" />
+        <Variable Name="banane_var" />
+        <Variable Name="tonic_var" />
       </Task>
     </Module>
   </DefaultView>

@@ -93,9 +93,34 @@
 <Source xsi:type="opcUa" refId="::Program1:gintonic_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton3" attribute="value" />
 </Binding>
+
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:resetToStart" attribute="value" />
+<Source xsi:type="opcUa" refId="::Program:resetToStart_var" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleButton12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Program1:osaft_var" attribute="value" />
+	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Program1:cola_var" attribute="value" />
+	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Program1:banane_var" attribute="value" />
+	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program1:sprite_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:passwordVisu_st" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="Password1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:passwordVisuCorrect_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="NavigationButton3" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

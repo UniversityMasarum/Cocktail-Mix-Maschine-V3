@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="MainContent2" height="420" width="720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="20" left="40" width="140" height="60" zIndex="0" text="Wodka Cola" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="40" width="140" height="60" zIndex="1" text="Kirsch-Cola" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="180" left="40" width="140" height="60" zIndex="2" text="Gin Tonic" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="260" left="40" width="140" height="60" zIndex="3" text="Wodka O-Saft" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="340" left="40" width="140" height="60" zIndex="4" text="Grüne Wiese" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton6" top="20" left="220" width="140" height="60" zIndex="5" text="Angelblue" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton7" top="100" left="220" width="140" height="60" zIndex="6" text="Brassmonkey" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton8" top="180" left="220" width="140" height="60" zIndex="7" text="Kiba" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton9" top="260" left="220" width="140" height="60" zIndex="8" text="Rum Cola" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton10" top="340" left="220" width="140" height="60" zIndex="9" text="Bich" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="20" left="40" width="140" height="60" zIndex="0" text="Wodka Cola" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="40" width="140" height="60" zIndex="1" text="Kirsch-Cola" fontSize="17px" fontName="Times New Roman" bold="true" italic="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="180" left="40" width="140" height="60" zIndex="2" text="Gin Tonic" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton4" top="260" left="40" width="140" height="60" zIndex="3" text="Wodka O-Saft" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="340" left="40" width="140" height="60" zIndex="4" text="Grüne Wiese" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton6" top="20" left="220" width="140" height="60" zIndex="5" text="Angelblue" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton7" top="100" left="220" width="140" height="60" zIndex="6" text="Brassmonkey" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton8" top="180" left="220" width="140" height="60" zIndex="7" text="Kiba" fontSize="17px" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton9" top="260" left="220" width="140" height="60" zIndex="8" text="Rum Cola" fontSize="17px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton10" top="340" left="220" width="140" height="60" zIndex="9" text="Bich" fontSize="17px" fontName="Times New Roman" bold="true" enable="false" />
   </Widgets>
 </Content>

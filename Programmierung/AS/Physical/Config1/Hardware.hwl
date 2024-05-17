@@ -2,33 +2,31 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/07/2024 17:32:48" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/16/2024 17:08:21" />
   </TimeStamps>
   <Modules>
-    <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
-    <Module Name="X20BM11" Type="X20BM11" X="264" Y="100" />
-    <Module Name="X20AO4632" Type="X20AO4632" X="264" Y="100" />
-    <Module Name="X20TB12" Type="X20TB12" X="264" Y="127" />
-    <Module Name="X3" Type="X3" X="251" Y="103" />
-    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
-    <Module Name="X2" Type="X2" X="238" Y="103" />
-    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
-    <Module Name="X1" Type="X1" X="225" Y="103" />
-    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="X20CP1382" Type="X20CP1382" X="346" Y="83" />
+    <Module Name="X20BM15" Type="X20BM15" X="510" Y="83" />
+    <Module Name="X20DO8322" Type="X20DO8322" X="510" Y="83" />
+    <Module Name="X20TB12a" Type="X20TB12" X="510" Y="110" />
+    <Module Name="X3" Type="X3" X="497" Y="86" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="497" Y="109" />
+    <Module Name="X2" Type="X2" X="484" Y="86" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="484" Y="109" />
+    <Module Name="X1" Type="X1" X="471" Y="86" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="471" Y="109" />
     <Module Name="6PPT30.0702-20W" Type="6PPT30.0702-20W" X="100" Y="-56" />
   </Modules>
   <Links>
-    <Link From="6PPT30.0702-20W" To="X20CP1382" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
-      <Point X="163.299988" Y="46" />
-      <Point X="163.299988" Y="46" />
+    <Link From="X20CP1382" To="6PPT30.0702-20W" FromPort="IF2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="380" Y="171" />
+      <Point X="380" Y="171" />
+      <Point X="380" Y="186" />
+      <Point X="380" Y="195" />
+      <Point X="163.299988" Y="195" />
       <Point X="163.299988" Y="51" />
-      <Point X="163.299988" Y="65" />
-      <Point X="95" Y="65" />
-      <Point X="95" Y="205" />
-      <Point X="134" Y="205" />
-      <Point X="134" Y="203" />
-      <Point X="134" Y="188" />
-      <Point X="134" Y="188" />
+      <Point X="163.299988" Y="46" />
+      <Point X="163.299988" Y="46" />
     </Link>
   </Links>
   <InfoElements />
