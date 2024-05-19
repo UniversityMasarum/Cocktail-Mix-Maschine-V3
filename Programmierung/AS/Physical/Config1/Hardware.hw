@@ -38,6 +38,7 @@
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="X20CP1382_Config1" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
