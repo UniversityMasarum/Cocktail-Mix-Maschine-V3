@@ -37,6 +37,7 @@ END_VAR
 VAR
 	delayCocktailStation_var : USINT := 0; (*Ein Delay nach dem Cocktaileinfüllen*)
 	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
-	passwordVisu_st : WSTRING[80]; (*Passwort 'student42'*)
+	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
 	becherAusgabeDelay_var : USINT := 0; (*Delay wenn Becher entnommen wird*)
+	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
 END_VAR

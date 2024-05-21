@@ -52,5 +52,5 @@ VAR
 	sprite_var : BOOL := FALSE;
 END_VAR
 VAR RETAIN
-	Anzahl_Cocktails : ARRAY[0..20] OF INT := [20(0)];
+	Anzahl_Cocktails : ARRAY[0..19] OF INT := [20(0)];
 END_VAR

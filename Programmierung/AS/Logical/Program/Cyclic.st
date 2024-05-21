@@ -40,7 +40,16 @@ PROGRAM _CYCLIC
 				stationBecherspender_var:
 					IF inductiveSensorBecherspender_DI = FALSE OR counterBecherspender_var > 0 OR BecherAusgabe_var = 3 THEN
 						directionThreadmillleft_DO := 0;
-						BecherAusgabe_var := 3; 
+						BecherAusgabe_var := 0;
+						counterBecherentnahme_var := 0;
+						// Setzt Ladebalkenseite wieder auf Hauptseite
+						IF BecherAusgabe_var = 2 THEN
+							goToMainpage_var := TRUE;
+						ELSE
+							goToMainpage_var := FALSE;
+						END_IF
+						
+
 						
 						IF cocktailChosen_var = TRUE THEN
 							BecherAusgabe_var := 0;
@@ -132,6 +141,7 @@ PROGRAM _CYCLIC
 					END_IF								
 		
 				stationBecherentnahme_var:
+					delayCocktailStation_var := 0;
 					IF BecherAusgabe_var = 0 THEN
 						counterCocktailmixer_var := 0;
 						directionTreadmillright_DO := 1;
@@ -148,17 +158,22 @@ PROGRAM _CYCLIC
 					END_IF
 					
 					// When Button gets clicked and Station got reached, go back to first station, im letzten Zyklus muss der Schalter True sein
-					IF bechererkennungAusgabe_DI = FALSE AND bechererkennungLetzerZyklus = TRUE THEN
+					IF bechererkennungAusgabe_DI = FALSE AND BecherAusgabe_var = 1 THEN
 						BecherAusgabe_var := 2;
-						counterBecherentnahme_var := 0;
+						counterBecherentnahme_var := 1;
 						bechererkennungLetzerZyklus := FALSE;
 					END_IF
-					// SETZT den letzten Zyklus 
-					IF bechererkennungAusgabe_DI = TRUE THEN
-						bechererkennungLetzerZyklus := TRUE;
-					END_IF
 					
-					IF BecherAusgabe_var = 2 THEN
+					// SETZT den letzten Zyklus 
+					//IF bechererkennungAusgabe_DI = TRUE THEN
+					//	bechererkennungLetzerZyklus := TRUE;
+					//END_IF
+					// Zählt Für Verzögerung beim herausnehmen 
+					IF counterBecherentnahme_var > 0 THEN
+						counterBecherentnahme_var := counterBecherentnahme_var + 1; 
+					END_IF
+					// Fährt mit verzögerung los
+					IF BecherAusgabe_var = 2 AND counterBecherentnahme_var = 20 THEN
 						counterCocktailmixer_var := 0;
 						directionTreadmillright_DO := 0;
 						directionThreadmillleft_DO := 1;	
@@ -172,7 +187,8 @@ PROGRAM _CYCLIC
 		IF resetToStart_var = TRUE THEN 
 			currentStation_var := 4; 
 			BecherAusgabe_var := 2;
-			
+			counterBecherentnahme_var := 20;
+
 			pumpeBig1_DO := FALSE;
 			pumpeBig2_DO := FALSE;
 			pumpeBig3_DO := FALSE;

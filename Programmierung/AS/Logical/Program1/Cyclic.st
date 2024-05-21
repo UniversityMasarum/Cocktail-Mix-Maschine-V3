@@ -190,7 +190,7 @@ PROGRAM _CYCLIC
 		cocktail_var := wodka_cola;
 		wodka_cola_var := FALSE;
 		Anzahl_Cocktails [wodka_cola] := Anzahl_Cocktails [wodka_cola] + 1;
-	END_IF	
+	END_IF
 	IF kirschcola_var = TRUE THEN
 		cocktail_var := kirschcola;
 		kirschcola_var := FALSE;
