@@ -24,6 +24,8 @@ PROGRAM _INIT
 	ml_banane := T#330ms;
 	ml_tonic := T#330ms;
 	ml_sprite := T#330ms;
+	ml_bluelagoon_sprite := T#220ms;
+	ml_bluelagoon_bc := T#80ms;
 	
 	cocktail_started := TRUE;
 	

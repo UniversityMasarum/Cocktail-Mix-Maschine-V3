@@ -12,10 +12,11 @@ TYPE
 		kiba,
 		rumcola,
 		gintonic,
+		bluelagoon,
 		cola,
 		osaft,
 		banane,
 		tonic,
 		sprite
-	);
+		);
 END_TYPE

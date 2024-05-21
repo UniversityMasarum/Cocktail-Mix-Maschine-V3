@@ -34,6 +34,9 @@ VAR
 	ml_banane : TIME;
 	ml_tonic : TIME;
 	ml_sprite : TIME;
+	ml_bluelagoon_sprite : TIME;
+	ml_bluelagoon_bc : TIME;
+	
 	
 	wodka_cola_var : BOOL := FALSE;
 	kirschcola_var : BOOL := FALSE;
@@ -50,6 +53,8 @@ VAR
 	banane_var : BOOL := FALSE;
 	tonic_var : BOOL := FALSE;
 	sprite_var : BOOL := FALSE;
+	bluelagoon_var : BOOL := FALSE;
+	
 END_VAR
 VAR RETAIN
 	Anzahl_Cocktails : ARRAY[0..20] OF INT := [20(0)];
