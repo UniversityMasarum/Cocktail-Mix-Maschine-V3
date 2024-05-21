@@ -33,6 +33,7 @@
         <Variable Name="resetToStart_var" />
         <Variable Name="passwordVisuCorrect_var" />
         <Variable Name="passwordVisu_st" />
+        <Variable Name="goToMainpage_var" />
       </Task>
       <Task Name="Program1">
         <Variable Name="angelblue_var" />

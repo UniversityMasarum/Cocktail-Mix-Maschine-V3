@@ -6,7 +6,7 @@
       <Selector ID="WebServerProtocol" Value="1">
         <Property ID="WebServerPort" Value="81" />
       </Selector>
-      <Property ID="MaxClientConnections" Value="1" />
+      <Property ID="MaxClientConnections" Value="2" />
       <Property ID="MaxBRClientConnections" Value="0" />
       <Selector ID="AuthenticationMode" Value="AuthenticationModeRbac" />
       <Group ID="TcpProxyConf">

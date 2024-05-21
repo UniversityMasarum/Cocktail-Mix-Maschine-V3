@@ -19,8 +19,9 @@
 		<BindingsSet refId="laufband" />
 	</BindingsSets>
 	<EventBindingsSets>
-    	<EventBindingsSet refId="eventbinding_1" />
-  	</EventBindingsSets>
+		<EventBindingsSet refId="eventbindingsAlcohol" />
+		<EventBindingsSet refId="eventbindingsNonAlcohol" />
+	</EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->
   </Dialogs>

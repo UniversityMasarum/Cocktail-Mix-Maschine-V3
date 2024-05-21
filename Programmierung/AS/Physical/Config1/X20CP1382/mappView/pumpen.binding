@@ -2,125 +2,64 @@
 <BindingsSet id="pumpen_0" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
 		<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig1_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch1" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig3_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch3" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig4_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch4" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall1_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch5" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall2_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch6" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall3_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch7" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall4_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch8" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall5_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch9" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall6_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch10" attribute="value" />
-</Binding>
-		
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:kirschcola_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton2" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:angelblue_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton6" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:gruenewiese_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton5" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:brassmonkey_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton7" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:kiba_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton8" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:wodka_cola_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:rumcola_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton9" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig2_DO" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch2" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch13" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:stationPercentage_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent5" widgetRefId="ProgressBar1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:testcocktail_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton10" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:wodka_osaft_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton4" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:gintonic_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent2" widgetRefId="ToggleButton3" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:resetToStart_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleButton12" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-	<Source xsi:type="opcUa" refId="::Program1:osaft_var" attribute="value" />
-	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-	<Source xsi:type="opcUa" refId="::Program1:cola_var" attribute="value" />
-	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton3" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-	<Source xsi:type="opcUa" refId="::Program1:banane_var" attribute="value" />
-	<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton2" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program1:sprite_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent1" widgetRefId="MomentaryPushButton4" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:passwordVisu_st" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="Password1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:passwordVisuCorrect_var" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="NavigationButton3" attribute="enable" />
-</Binding>
-</Bindings>
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig1_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig2_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig3_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeBig4_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall1_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch5" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall2_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch6" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall3_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch7" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall4_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch8" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall5_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch9" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:pumpeSmall6_DO" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch10" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch13" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Program:stationPercentage_var" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent5" widgetRefId="ProgressBar1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Program:resetToStart_var" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleButton12" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Program:passwordVisu_st" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="Password1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Program:passwordVisuCorrect_var" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="NavigationButton3" attribute="enable" />
+		</Binding>
+	</Bindings>
 </BindingsSet>
