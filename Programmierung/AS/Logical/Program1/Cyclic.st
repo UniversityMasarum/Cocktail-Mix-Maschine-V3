@@ -6,7 +6,7 @@ PROGRAM _CYCLIC
 	p2 - 550ml/min (Cola braucht es ca 
 	p3 - 550ml/min
 	p4 - 500ml/min
-	p1 - 500ml/min 
+
 	p6 - 140ml/min
 	p7 - 150ml/min
 	p1 - 140ml/min
@@ -125,14 +125,14 @@ PROGRAM _CYCLIC
 							
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall3_DO:=TOF_02.Q;
-
-			kiba:
-				pumptime_01 :=	(ml_kiba_banane*144);
-				pumptime_02 :=	(ml_kiba_kirsch*400);
-					
-				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-				pumpeBig3_DO:=TOF_01.Q;
-					
+			
+				kiba:
+					pumptime_01 :=	(ml_kiba_banane*144);
+					pumptime_02 :=	(ml_kiba_kirsch*400);
+						
+					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+					pumpeBig3_DO:=TOF_01.Q;
+						
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall5_DO:=TOF_02.Q;
 			
@@ -145,6 +145,20 @@ PROGRAM _CYCLIC
 							
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall4_DO:=TOF_02.Q;
+				
+				bluelagoon: 
+					
+					pumptime_01 :=	(ml_bluelagoon_sprite*144);
+					pumptime_02 :=	(ml_bluelagoon_bc*400);
+					
+					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+					pumpeBig1_DO:=TOF_01.Q;
+					
+					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+					pumpeSmall6_DO:=TOF_02.Q;
+				
+				
+				
 				osaft:
 					pumptime_01 :=	(ml_osaft*144);
 									
@@ -173,7 +187,7 @@ PROGRAM _CYCLIC
 			END_CASE
 		END_IF
 		// IF Cocktail was chosen in the visualisation --> Cocktailchosen == True
-		IF wodka_cola_var = 1 OR kirschcola_var = 1 OR testcocktail_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR gintonic_var = 1 OR osaft_var = 1 OR cola_var = 1 OR banane_var = 1 OR tonic_var = 1 OR sprite_var THEN
+		IF wodka_cola_var = 1 OR kirschcola_var = 1 OR testcocktail_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR gintonic_var = 1 OR bluelagoon_var = 1 OR osaft_var = 1 OR cola_var = 1 OR banane_var = 1 OR tonic_var = 1 OR sprite_var = 1 THEN
 			cocktailChosen_var := TRUE;
 		END_IF
 		
@@ -235,6 +249,11 @@ PROGRAM _CYCLIC
 		cocktail_var := gintonic;
 		gintonic_var := FALSE; 
 		Anzahl_Cocktails [gintonic] := Anzahl_Cocktails [gintonic] + 1;
+	END_IF
+	IF bluelagoon_var = TRUE THEN
+		cocktail_var := bluelagoon;
+		bluelagoon_var := FALSE; 
+		Anzahl_Cocktails [bluelagoon] := Anzahl_Cocktails [bluelagoon] + 1;
 	END_IF
 	IF osaft_var = TRUE THEN
 		cocktail_var := osaft;
