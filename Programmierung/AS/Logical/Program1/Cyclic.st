@@ -6,7 +6,7 @@ PROGRAM _CYCLIC
 	p2 - 550ml/min (Cola braucht es ca 
 	p3 - 550ml/min
 	p4 - 500ml/min
-	p1 - 500ml/min 
+
 	p6 - 140ml/min
 	p7 - 150ml/min
 	p1 - 140ml/min
