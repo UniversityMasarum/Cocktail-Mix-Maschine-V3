@@ -1,7 +1,6 @@
 VAR
 	eisspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert den Eisspender --> Arduino*)
 	bechererkennungAusgabe_DI : BOOL := TRUE; (*Wenn endlageschalter nicht gedrückt ist, Becher entnommen*)
-	bechererkennungLetzerZyklus : BOOL := FALSE; (*Gibt den Wert des Schalters im letzen Zyklus an*)
 	bechererkennungSpender_DI : BOOL := FALSE; (*Wenn endlageschalter gedrückt, Becher in Halterung*)
 	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
 	directionThreadmillleft_DO : BOOL; (*Steuert das Laufband nach links*)
@@ -38,6 +37,5 @@ VAR
 	delayCocktailStation_var : USINT := 0; (*Ein Delay nach dem Cocktaileinfüllen*)
 	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
 	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
-	becherAusgabeDelay_var : USINT := 0; (*Delay wenn Becher entnommen wird*)
 	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
 END_VAR

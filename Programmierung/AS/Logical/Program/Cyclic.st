@@ -39,18 +39,15 @@ PROGRAM _CYCLIC
 			CASE currentStation_var OF
 				stationBecherspender_var:
 					IF inductiveSensorBecherspender_DI = FALSE OR counterBecherspender_var > 0 THEN
+						IF BecherAusgabe_var = 3 THEN
+							goToMainpage_var := TRUE;
+						END_IF
 						directionThreadmillleft_DO := 0;
 						BecherAusgabe_var := 0;
 						counterBecherentnahme_var := 0;
 						// Setzt Ladebalkenseite wieder auf Hauptseite
-						IF BecherAusgabe_var = 2 THEN
-							goToMainpage_var := TRUE;
-						ELSE
-							goToMainpage_var := FALSE;
-						END_IF
 						
 
-						
 						IF cocktailChosen_var = TRUE THEN
 							BecherAusgabe_var := 0;
 							counterBecherspender_var := counterBecherspender_var + 1;

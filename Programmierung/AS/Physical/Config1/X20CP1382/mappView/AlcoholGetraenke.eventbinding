@@ -211,7 +211,7 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="eventBinding_alc_10" comment="Testcocktail Button Binding">
+    <EventBinding id="eventBinding_alc_10" comment="blue Lagoon Button Binding">
       <Source xsi:type="widgets.brease.PushButton.Event" contentRefId="MainContent2" widgetRefId="PushButton11" event="Click" />
       <EventHandler>
         <Sequence>
@@ -226,6 +226,27 @@
             <Action>
               <Target xsi:type="clientSystem.Action">
                 <Method xsi:type="clientSystem.Action.Navigate" pageId="page_5" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="GoToMainpage">
+      <Source xsi:type="opcUa.Event" refId="::Program:goToMainpage_var" event="ValueChanged" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Navigate" pageId="page_0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Program:goToMainpage_var">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
               </Target>
             </Action>
           </Step>
