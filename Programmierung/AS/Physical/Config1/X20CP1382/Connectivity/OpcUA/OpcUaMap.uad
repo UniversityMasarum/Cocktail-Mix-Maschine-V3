@@ -52,6 +52,7 @@
         <Variable Name="cola_var" />
         <Variable Name="banane_var" />
         <Variable Name="tonic_var" />
+        <Variable Name="bluelagoon_var" />
       </Task>
     </Module>
   </DefaultView>

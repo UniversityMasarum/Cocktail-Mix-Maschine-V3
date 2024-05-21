@@ -157,8 +157,6 @@ PROGRAM _CYCLIC
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 					pumpeSmall6_DO:=TOF_02.Q;
 				
-				
-				
 				osaft:
 					pumptime_01 :=	(ml_osaft*144);
 									

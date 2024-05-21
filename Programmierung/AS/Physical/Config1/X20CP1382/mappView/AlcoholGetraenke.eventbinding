@@ -211,19 +211,25 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="EventBinding_5">
-      <Source xsi:type="opcUa.Event" refId="::Program:stationPercentage_var" event="ValueChanged" />
-      <Operand datatype="BOOL" name="goToMain">
-        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::Program:goToMainpage_var">
-          <Method xsi:type="opcUa.NodeAction.GetValue" />
-        </ReadTarget>
-      </Operand>
-      <EventHandler condition="newValue=0">
-        <Action>
-          <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.Navigate" pageId="page_0" />
-          </Target>
-        </Action>
+    <EventBinding id="eventBinding_alc_10" comment="Testcocktail Button Binding">
+      <Source xsi:type="widgets.brease.PushButton.Event" contentRefId="MainContent2" widgetRefId="PushButton11" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Program1:bluelagoon_var">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Navigate" pageId="page_5" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
   </Bindings>

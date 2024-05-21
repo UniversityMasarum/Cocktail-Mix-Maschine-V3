@@ -4,12 +4,13 @@
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton1" top="20" left="40" width="140" height="60" zIndex="0" text="Wodka Cola" fontSize="18px" fontName="Times New Roman" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton2" top="100" left="40" width="140" height="60" zIndex="1" text="Kirsch-Cola" fontSize="18px" fontName="Times New Roman" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton3" top="180" left="40" width="140" height="60" zIndex="2" text="Gin Tonic" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton4" top="260" left="40" width="140" height="60" zIndex="3" text="Wodka O-Saft" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton4" top="260" left="40" width="140" height="60" zIndex="3" text="Wodka O" fontSize="18px" fontName="Times New Roman" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton5" top="340" left="40" width="140" height="60" zIndex="4" text="Grüne Wiese" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton6" top="20" left="200" width="140" height="60" zIndex="5" text="Angelblue" fontSize="18px" fontName="Times New Roman" bold="true" italic="false" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton7" top="100" left="200" width="140" height="60" zIndex="6" text="Brassmonkey" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton8" top="180" left="200" width="140" height="60" zIndex="7" text="Kiba" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton9" top="260" left="200" width="140" height="60" zIndex="8" text="Rum Cola" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.PushButton" id="PushButton10" top="340" left="200" width="140" height="60" zIndex="9" text="Testcocktail" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton6" top="20" left="220" width="140" height="60" zIndex="5" text="Angelblue" fontSize="18px" fontName="Times New Roman" bold="true" italic="false" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton7" top="100" left="220" width="140" height="60" zIndex="6" text="Brassmonkey" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton8" top="180" left="220" width="140" height="60" zIndex="7" text="Kiba" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton9" top="260" left="220" width="140" height="60" zIndex="8" text="Rum Cola" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton10" top="340" left="400" width="140" height="60" zIndex="9" text="Testcocktail" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton11" top="340" left="220" width="140" height="60" zIndex="10" text="Blue Lagoon" fontSize="18px" fontName="Times New Roman" bold="true" />
   </Widgets>
 </Content>
