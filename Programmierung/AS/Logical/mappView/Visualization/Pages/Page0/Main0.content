@@ -3,10 +3,10 @@
   <Widgets>
     <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="-20" left="0" width="800" height="380" zIndex="0">
       <Widgets>
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="40" left="40" width="320" height="140" zIndex="0" pageId="page_1" text="Analkoholische Getränke" fontSize="22px" fontName="Times New Roman" bold="true" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="40" left="40" width="320" height="140" zIndex="0" pageId="page_1" text="Softdrinks" fontSize="22px" fontName="Times New Roman" bold="true" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="40" left="440" width="320" height="140" zIndex="1" pageId="page_2" text="Alkoholische Cocktails" fontSize="22px" fontName="Times New Roman" bold="true" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton3" top="220" left="40" width="320" height="140" zIndex="2" pageId="page_3" text="Reinigungsprogramm" fontSize="22px" fontName="Times New Roman" bold="true" enable="false" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="220" left="440" width="320" height="140" zIndex="3" pageId="page_4" text="Informationen Wiki" fontSize="22px" fontName="Times New Roman" bold="true" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="220" left="440" width="320" height="140" zIndex="3" pageId="page_4" text="Informationen Wiki" fontSize="22px" fontName="Times New Roman" bold="true" enable="false" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Password" id="Password1" top="360" left="160" width="280" zIndex="1" />

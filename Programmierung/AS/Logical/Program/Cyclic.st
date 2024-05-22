@@ -158,7 +158,7 @@ PROGRAM _CYCLIC
 						cocktailFinished_var := 0;
 						stationPercentage_var := 100;
 						directionTreadmillright_DO := 0;
-						delayCocktailStation_var := 1;
+						delayCocktailStation_var := 0;
 					END_IF
 					
 					// Zählt Für Verzögerung beim herausnehmen 
@@ -167,7 +167,7 @@ PROGRAM _CYCLIC
 					END_IF
 					
 					// Fährt mit verzögerung wieder zum Start
-					IF BecherAusgabe_var = 2 AND counterBecherentnahme_var >= 40 THEN
+					IF BecherAusgabe_var = 2 AND counterBecherentnahme_var >= 60 THEN
 						directionTreadmillright_DO := 0;
 						directionThreadmillleft_DO := 1;	
 						currentStation_var := 0;
