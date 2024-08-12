@@ -76,13 +76,15 @@ void setup() {
     Serial.println(F("SSD1306 allocation failed"));
     for(;;);
   }
-  
-  display.display();
-  delay(2000);
-  display.clearDisplay();
-  display.display();
+  // Display Initialisierung zusammenhalten
+  display.display(); // braucht es das
+  delay(2000); // braucht es das
+  display.clearDisplay(); 
+  display.display(); //Braucht es das?
 
   pumpServo.attach(SERVO_PIN);
+
+  // LED Strip
   strip.begin();
   strip.show();
 
@@ -110,11 +112,14 @@ void loop() {
 // Verarbeitung der Tastatureingaben
 void handleKeypadInput(char key) {
   switch (key) {
-    case '1': case '2': case '3': case '4':
+    // Anzahl der Becher
+    case '1': case '2': case '3': case '4': // Zu wenig cases
       selectedBechers = key - '0';
       updateDisplay();
       delay(300);
       break;
+    
+    // Likör sorte
     case 'A': case 'B': case 'C': case 'D':
       selectedPump = key - 'A' + 1;
       updateDisplay();
