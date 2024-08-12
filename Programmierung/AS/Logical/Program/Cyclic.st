@@ -1,9 +1,13 @@
 PROGRAM _CYCLIC
+	// Visualisierungs Passworteingabe
 	IF passwordVisu_st = "student42" THEN
 		passwordVisuCorrect_var := TRUE;
 	ELSE
 		passwordVisuCorrect_var := FALSE;
 	END_IF
+	
+	
+	
 	IF ERROR_DI = TRUE THEN
 		// ON ERROR STOPPT ALLE PUMPEN DIREKT
 		pumpeBig1_DO := FALSE;
@@ -77,22 +81,15 @@ PROGRAM _CYCLIC
 						counterEisstation_var := counterEisstation_var + 1;
 						stationPercentage_var := 30;
 						
-						
-						
-						// 300 ms impuls for arduino
+						// 300 ms impuls for Arduino bei Anfahren der Station
 						IF counterEisstation_var < 4 THEN
 							eisspenderAktivieren_DO := TRUE;
 						ELSE
 							eisspenderAktivieren_DO := FALSE;
 						END_IF
-						
-						// Wenn lichtschranke keinen Eiswürfel seit 5 sekunden detektiert, wird nächste Station angefahren. 
-					//	IF lichtschranke
-						
 							
-							
-						
-						IF counterEisstation_var > 150 OR THEN
+						// Wenn der Wagen an der Station für 15 Sekunden steht oder das Signal vom Arduino kommt, das Lichtschranke ausgelöst wurde
+						IF counterEisstation_var > 150 OR lichtschrankeEismaschine_DI = TRUE THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
 							stationPercentage_var := 40;

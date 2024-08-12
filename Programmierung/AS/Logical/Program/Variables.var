@@ -38,5 +38,7 @@ VAR
 	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
 	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
 	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
-	lichtschrankeEismaschine_DI : USINT;
+	lichtschrankeEismaschine_DI : BOOL := FALSE; (*Reagiert auf den Arduino mit der Lichtschranke*)
+	initialSetup_var : BOOL; (*Ist für Initialisierung und rücksetzen auf die erste Station*)
+	endlagenschArmCocktailStation_DI : BOOL := FALSE; (*Zeigt an, ob becher unter dem Endlagenschalter ist*)
 END_VAR
