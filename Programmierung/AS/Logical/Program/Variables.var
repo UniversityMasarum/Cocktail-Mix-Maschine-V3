@@ -5,8 +5,8 @@ VAR
 	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
 	directionThreadmillleft_DO : BOOL; (*Steuert das Laufband nach links*)
 	directionThreadmill_left_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
-	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
 	directionThreadmill_right_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
+	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
 	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
 	inductiveSensorBecherspender_DI : BOOL := FALSE; (*Station Becherspender Sensorerkennung*)
 	zitronenspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Zitronenspender --> Arduino *)
@@ -38,4 +38,5 @@ VAR
 	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
 	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
 	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
+	lichtschrankeEismaschine_DI : USINT;
 END_VAR

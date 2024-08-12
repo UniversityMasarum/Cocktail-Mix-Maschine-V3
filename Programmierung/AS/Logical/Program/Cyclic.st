@@ -74,9 +74,10 @@ PROGRAM _CYCLIC
 					IF inductiveSensorEisstation_DI = FALSE OR counterEisstation_var > 0 THEN
 						directionTreadmillright_DO := 0;
 						counterBecherspender_var := 0;
-						
 						counterEisstation_var := counterEisstation_var + 1;
 						stationPercentage_var := 30;
+						
+						
 						
 						// 300 ms impuls for arduino
 						IF counterEisstation_var < 4 THEN
@@ -84,8 +85,14 @@ PROGRAM _CYCLIC
 						ELSE
 							eisspenderAktivieren_DO := FALSE;
 						END_IF
-
-						IF counterEisstation_var > 150 THEN
+						
+						// Wenn lichtschranke keinen Eiswürfel seit 5 sekunden detektiert, wird nächste Station angefahren. 
+					//	IF lichtschranke
+						
+							
+							
+						
+						IF counterEisstation_var > 150 OR THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
 							stationPercentage_var := 40;
@@ -93,20 +100,20 @@ PROGRAM _CYCLIC
 					END_IF
 								
 				stationZitronenspender_var:
-					IF inductiveSensorZitronenspende_DI = FALSE OR counterZitronenspender_var > 5 THEN
+					IF inductiveSensorZitronenspende_DI = FALSE OR counterZitronenspender_var > 0 THEN
 						directionTreadmillright_DO := 0;
 						counterEisstation_var := 0;
 						counterZitronenspender_var := counterZitronenspender_var + 1;
 						stationPercentage_var := 50;
 						
-						// 300 ms impuls for arduino
-						IF counterZitronenspender_var < 20 THEN
+						// 400 ms impuls for arduino
+						IF counterZitronenspender_var < 4 THEN
 							zitronenspenderAktivieren_DO := TRUE;
 						ELSE
 							zitronenspenderAktivieren_DO := FALSE;
 						END_IF
 							
-						IF counterZitronenspender_var > 70 THEN
+						IF counterZitronenspender_var > 50 THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
 							stationPercentage_var := 60;
