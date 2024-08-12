@@ -21,4 +21,5 @@ VAR_CONFIG
 	::Program:BecherspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput01;
 	::Program:eisspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput02;
 	::ERROR_DI AT %IX."X2".DigitalInput08 INVERSE;
+	::Program:zitronenspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput03;
 END_VAR

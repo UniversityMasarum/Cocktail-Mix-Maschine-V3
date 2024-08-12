@@ -106,7 +106,7 @@ PROGRAM _CYCLIC
 							zitronenspenderAktivieren_DO := FALSE;
 						END_IF
 							
-						IF counterZitronenspender_var > 0 THEN
+						IF counterZitronenspender_var > 70 THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
 							stationPercentage_var := 60;
