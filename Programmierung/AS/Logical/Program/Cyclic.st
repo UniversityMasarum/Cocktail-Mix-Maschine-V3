@@ -35,20 +35,21 @@ PROGRAM _CYCLIC
 				directionTreadmillright_DO := 0;
 			END_IF
 			
+			
 		ELSE
 			CASE currentStation_var OF
 				stationBecherspender_var:
+					// Setzt Website wieder auf Hauptseite nach erfolgten Durchlauf
 					IF inductiveSensorBecherspender_DI = FALSE OR counterBecherspender_var > 0 THEN
 						IF BecherAusgabe_var = 3 THEN
 							goToMainpage_var := TRUE;
+							BecherAusgabe_var := 0;	
 						END_IF
-						directionThreadmillleft_DO := 0;
-						BecherAusgabe_var := 0;
-						counterBecherentnahme_var := 0;
-						// Setzt Ladebalkenseite wieder auf Hauptseite
 						
-
+						directionThreadmillleft_DO := 0;
+						counterBecherentnahme_var := 0;
 						IF cocktailChosen_var = TRUE THEN
+							goToMainpage_var := FALSE;
 							BecherAusgabe_var := 0;
 							counterBecherspender_var := counterBecherspender_var + 1;
 							

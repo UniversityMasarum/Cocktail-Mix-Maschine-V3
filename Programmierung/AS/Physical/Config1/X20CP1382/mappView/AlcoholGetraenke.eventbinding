@@ -91,7 +91,7 @@
         <Sequence>
           <Step order="0">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::Program1:wodka_cola_var">
+              <Target xsi:type="opcUa.NodeAction" refId="::Program1:gruenewiese_var">
                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>
