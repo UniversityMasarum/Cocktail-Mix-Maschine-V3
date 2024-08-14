@@ -122,24 +122,61 @@ PROGRAM _CYCLIC
 						directionTreadmillright_DO := 0;
 						counterZitronenspender_var := 0;
 						counterCocktailmixer_var := counterCocktailmixer_var + 1;
-						stationPercentage_var := 70;
 						
-						// IF first time on station
-						IF counterCocktailmixer_var < 3 THEN
-							cocktail_started := FALSE;
-						END_IF
 						
-						//	IF cocktailFinished_var = TRUE THEN
-						IF counterCocktailmixer_var > 3 AND pumpeBig1_DO = 0 AND pumpeBig2_DO = 0 AND pumpeBig3_DO = 0 AND pumpeBig4_DO = 0 AND pumpeSmall1_DO = 0 AND pumpeSmall2_DO = 0 AND pumpeSmall3_DO = 0 AND pumpeSmall4_DO = 0 AND  pumpeSmall5_DO = 0 AND  pumpeSmall6_DO = 0 THEN
-							stationPercentage_var := 90;
-							cocktailFinished_var := TRUE; 
-							delayCocktailStation_var := delayCocktailStation_var + 1;
-						END_IF
-						
-						IF delayCocktailStation_var > 15  AND stationPercentage_var = 90 THEN 
-							directionTreadmillright_DO := TRUE;
-							currentStation_var := currentStation_var + 1;
-						END_IF
+						CASE currentCocktialState_var OF
+							0:
+								// Arm fährt runter --> Signal Arduino
+								IF counterCocktailmixer_var > 3 THEN
+									armCocktailstation_DO := TRUE;
+									currentCocktialState_var := currentCocktialState_var + 1;
+									stationPercentage_var := 70;
+								END_IF
+							1:
+								// Setzt Arduino Signal wieder auf 0
+								IF counterCocktailmixer_var > 7 THEN;
+									armCocktailstation_DO := FALSE;
+									currentCocktialState_var := currentCocktialState_var + 1;
+								END_IF
+	
+							2: 
+								// Startet Cocktail, wenn Endlagenschalter Anschlägt
+								IF counterCocktailmixer_var >= 30 AND endlagenschArmCocktailStation_DI = TRUE THEN
+									cocktail_started := FALSE;
+									currentCocktialState_var := currentCocktialState_var + 1;
+								END_IF
+							3:
+								//	IF cocktailFinished_var = TRUE THEN
+								IF counterCocktailmixer_var >= 50 AND pumpeBig1_DO = 0 AND pumpeBig2_DO = 0 AND pumpeBig3_DO = 0 AND pumpeBig4_DO = 0 AND pumpeSmall1_DO = 0 AND pumpeSmall2_DO = 0 AND pumpeSmall3_DO = 0 AND pumpeSmall4_DO = 0 AND  pumpeSmall5_DO = 0 AND  pumpeSmall6_DO = 0 THEN
+									stationPercentage_var := 80;
+									cocktailFinished_var := TRUE; 
+									
+									hilfsDelayArmCocktailStation_var := counterCocktailmixer_var + 5;
+									currentCocktialState_var := currentCocktialState_var + 1;
+								END_IF
+							4:
+								// Delay nach dem die Pumpen abgeschalten haben 500ms
+								IF counterCocktailmixer_var >= hilfsDelayArmCocktailStation_var AND armCocktailstation_DO = FALSE THEN
+									armCocktailstation_DO := TRUE;
+									hilfsDelayArmCocktailStation_var :=  counterCocktailmixer_var + 4;
+									currentCocktialState_var := currentCocktialState_var + 1;
+								END_IF
+							5:
+								// 400 ms Signal auf den Ausgang beenden
+								IF counterCocktailmixer_var >= hilfsDelayArmCocktailStation_var AND armCocktailstation_DO = TRUE THEN
+									stationPercentage_var := 90;
+									armCocktailstation_DO := FALSE;
+									hilfsDelayArmCocktailStation_var := counterCocktailmixer_var + 16;
+									currentCocktialState_var := currentCocktialState_var + 1;
+								END_IF
+							6:
+								// geht zur nächsten Station nachdem der arm 1.6 Sekunden Zeit hatte hochzufahren
+								IF 	counterCocktailmixer_var >= hilfsDelayArmCocktailStation_var AND stationPercentage_var = 90 THEN 
+									directionTreadmillright_DO := TRUE;
+									currentStation_var := currentStation_var + 1;
+									currentCocktialState_var := 0;
+								END_IF
+							END_CASE
 					END_IF								
 		
 				stationBecherentnahme_var:

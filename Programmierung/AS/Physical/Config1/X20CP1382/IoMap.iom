@@ -24,4 +24,5 @@ VAR_CONFIG
 	::Program:zitronenspenderAktivieren_DO AT %QX."X20DO8322".DigitalOutput03;
 	::Program:lichtschrankeEismaschine_DI AT %IX."X2".DigitalInput10;
 	::Program:endlagenschArmCocktailStation_DI AT %IX."X2".DigitalInput09;
+	::Program:armCocktailstation_DO AT %QX."X20DO8322".DigitalOutput04;
 END_VAR
