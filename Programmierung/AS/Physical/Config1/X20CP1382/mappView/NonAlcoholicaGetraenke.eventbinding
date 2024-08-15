@@ -23,7 +23,7 @@
       </EventHandler>
     </EventBinding>
     <EventBinding id="EventBinding_2" comment="Cola Button Binding">
-      <Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="MainContent1" widgetRefId="MomentaryPushButton2" event="Click" />
+      <Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="MainContent1" widgetRefId="MomentaryPushButton3" event="Click" />
       <EventHandler>
         <Sequence>
           <Step order="0">
@@ -44,7 +44,7 @@
       </EventHandler>
     </EventBinding>
     <EventBinding id="EventBinding_3" comment="Banane Button Binding">
-      <Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="MainContent1" widgetRefId="MomentaryPushButton3" event="Click" />
+      <Source xsi:type="widgets.brease.MomentaryPushButton.Event" contentRefId="MainContent1" widgetRefId="MomentaryPushButton2" event="Click" />
       <EventHandler>
         <Sequence>
           <Step order="0">

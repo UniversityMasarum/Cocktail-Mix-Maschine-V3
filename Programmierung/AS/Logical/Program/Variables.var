@@ -1,41 +1,47 @@
 VAR
-	eisspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert den Eisspender --> Arduino*)
+	armCocktailstation_DO : BOOL := FALSE; (*Gibt Signal für Arm nach oben und unten*)
+	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2, Wieder an Startposition = 3*)
 	bechererkennungAusgabe_DI : BOOL := TRUE; (*Wenn endlageschalter nicht gedrückt ist, Becher entnommen*)
 	bechererkennungSpender_DI : BOOL := FALSE; (*Wenn endlageschalter gedrückt, Becher in Halterung*)
 	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
+	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
+	counterBecherspender_var : USINT := 0; (*Setzt die Zeit für die Sation Becherspender*)
+	counterEisstation_var : USINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
+	counterZitronenspender_var : USINT := 0; (*Setzt die Zeit für die Sation Zitronenspender*)
+	currentCocktialState_var : USINT := 0; (*Läuft die einzelnen unterstationen im Cocktailmixer ab*)
+	currentStation_var : USINT := 0; (*Läuft die einzelnen Sationen ab*)
+	delayCocktailStation_var : USINT := 0; (*Ein Delay nach dem Cocktaileinfüllen*)
 	directionThreadmillleft_DO : BOOL; (*Steuert das Laufband nach links*)
 	directionThreadmill_left_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
-	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
 	directionThreadmill_right_var : BOOL; (*Kann nur im Reinigunsprogramm gesetzt werden*)
+	directionTreadmillright_DO : BOOL; (*Steuert das Laufband nach rechts*)
+	eisspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert den Eisspender --> Arduino*)
+	endlagenschArmCocktailStation_DI : BOOL := FALSE; (*Zeigt an, ob becher unter dem Endlagenschalter ist*)
+	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
+	hilfsDelayArmCocktailStation_var : UDINT := 0; (*hilft mit dem Timing für den Arm, damit die Pumpen sicher abgeschalten haben für bewegung*)
 	inductiveSensorBecherausgabe_DI : BOOL := FALSE; (*Station Becherausgabe Sensorenerkennung*)
 	inductiveSensorBecherspender_DI : BOOL := FALSE; (*Station Becherspender Sensorerkennung*)
-	zitronenspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Zitronenspender --> Arduino *)
+	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
 	inductiveSensorEisstation_DI : BOOL := FALSE; (*Station Eisstation Sensorerkennung*)
 	inductiveSensorZitronenspende_DI : BOOL := FALSE; (*Station Zitronenspender Sensorerkennung*)
+	initialSetup_var : BOOL; (*Ist für Initialisierung und rücksetzen auf die erste Station*)
+	lichtschrankeEismaschine_DI : BOOL := FALSE; (*Reagiert auf den Arduino mit der Lichtschranke*)
+	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
+	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
 	resetToStart_var : BOOL := FALSE; (*Fährt wieder an den Start*)
-	inductiveSensorCocktailmixer_DI : BOOL := FALSE; (*Station Cocktailmixer Sensorenerkennung*)
 END_VAR
 VAR CONSTANT
-	stationCocktailmixer_var : UINT := 3; (*Station Cocktailmixer als Festwerte*)
-END_VAR
-VAR
-	stationPercentage_var : USINT := 0; (*gibt in der Visualisierung den aktuellen Progress in % aus*)
-	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2, Wieder an Startposition = 3*)
-	currentStation_var : USINT := 0; (*Läuft die einzelnen Sationen ab*)
-	counterZitronenspender_var : USINT := 0; (*Setzt die Zeit für die Sation Zitronenspender*)
-	counterEisstation_var : USINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
-	counterBecherspender_var : USINT := 0; (*Setzt die Zeit für die Sation Becherspender*)
-	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
-END_VAR
-VAR CONSTANT
-	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
 	stationBecherentnahme_var : USINT := 4; (*Station Becherentnahme als Festwerte*)
 	stationBecherspender_var : USINT := 0; (*Station Becherspender als Festwerte*)
+	stationCocktailmixer_var : USINT := 3; (*Station Cocktailmixer als Festwerte*)
 	stationEismaschine_var : USINT := 1; (*Station Eismaschine als Festwerte*)
 END_VAR
 VAR
-	delayCocktailStation_var : USINT := 0; (*Ein Delay nach dem Cocktaileinfüllen*)
-	passwordVisuCorrect_var : BOOL := FALSE; (*gibt 1 aus wenn passwort stimmt*)
-	passwordVisu_st : WSTRING[40] := "student"; (*Passwort 'student42'*)
-	goToMainpage_var : BOOL := FALSE; (*Geht wieder zurück auf die Hauptseite*)
+	stationPercentage_var : USINT := 0; (*gibt in der Visualisierung den aktuellen Progress in % aus*)
+END_VAR
+VAR CONSTANT
+	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
+END_VAR
+VAR
+	zitronenspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Zitronenspender --> Arduino *)
 END_VAR
