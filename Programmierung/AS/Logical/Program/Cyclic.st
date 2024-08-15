@@ -5,8 +5,8 @@ PROGRAM _CYCLIC
 	ELSE
 		passwordVisuCorrect_var := FALSE;
 	END_IF
-	
-	
+
+		
 	
 	IF ERROR_DI = TRUE THEN
 		// ON ERROR STOPPT ALLE PUMPEN DIREKT
@@ -45,16 +45,17 @@ PROGRAM _CYCLIC
 				stationBecherspender_var:
 					// Setzt Website wieder auf Hauptseite nach erfolgten Durchlauf
 					IF inductiveSensorBecherspender_DI = FALSE OR counterBecherspender_var > 0 THEN
-						IF BecherAusgabe_var = 3 THEN
+						IF currentBecherausgabeState_var = 3 THEN
 							goToMainpage_var := TRUE;
-							BecherAusgabe_var := 0;	
+							resetCounter_var := 0;
+							currentBecherausgabeState_var := 0;	
 						END_IF
 						
 						directionThreadmillleft_DO := 0;
 						counterBecherentnahme_var := 0;
 						IF cocktailChosen_var = TRUE THEN
 							goToMainpage_var := FALSE;
-							BecherAusgabe_var := 0;
+							currentBecherausgabeState_var := 0;
 							counterBecherspender_var := counterBecherspender_var + 1;
 							
 							stationPercentage_var := 10;
@@ -180,11 +181,11 @@ PROGRAM _CYCLIC
 					END_IF								
 		
 				stationBecherentnahme_var:
-					CASE BecherAusgabe_var OF
+					CASE currentBecherausgabeState_var OF
 						0: // Stoppt an Station 
 							IF inductiveSensorBecherausgabe_DI = FALSE OR bechererkennungAusgabe_DI = TRUE THEN
 								counterCocktailmixer_var := 0;
-								BecherAusgabe_var := 1;
+								currentBecherausgabeState_var := 1;
 								cocktailFinished_var := 0;
 								stationPercentage_var := 100;
 								directionTreadmillright_DO := 0;
@@ -196,7 +197,7 @@ PROGRAM _CYCLIC
 							IF counterBecherentnahme_var >= 30 THEN 
 								// Erkennt wenn Becher Ausgegeben wurde --> Wird als zweites ausgeführt
 								IF bechererkennungAusgabe_DI = FALSE THEN
-									BecherAusgabe_var := 2;
+									currentBecherausgabeState_var := 2;
 								END_IF
 							ELSE
 								counterBecherentnahme_var := counterBecherentnahme_var + 1;
@@ -214,7 +215,7 @@ PROGRAM _CYCLIC
 								directionThreadmillleft_DO := 1;	
 								currentStation_var := 0;
 								cocktailChosen_var := FALSE;	
-								BecherAusgabe_var := 3;
+								currentBecherausgabeState_var := 3;
 							END_IF
 					END_CASE
 			END_CASE
@@ -222,27 +223,40 @@ PROGRAM _CYCLIC
 
 		// Zurücksetzen auf Start
 		IF resetToStart_var = TRUE THEN 
-			currentStation_var := 4; 
-			BecherAusgabe_var := 2;
-			counterBecherentnahme_var := 100;
-
-			pumpeBig1_DO := FALSE;
-			pumpeBig2_DO := FALSE;
-			pumpeBig3_DO := FALSE;
-			pumpeBig4_DO := FALSE;
-			pumpeSmall1_DO := FALSE;
-			pumpeSmall2_DO := FALSE;
-			pumpeSmall3_DO := FALSE;
-			pumpeSmall4_DO := FALSE;
-			pumpeSmall5_DO := FALSE;
-			pumpeSmall6_DO := FALSE;
-			
-			counterBecherspender_var := 0;
-			counterEisstation_var := 0;
-			counterZitronenspender_var := 0;
-			counterCocktailmixer_var := 0;
-
-			resetToStart_var := FALSE;
+			IF resetCounter_var < 10 THEN
+				resetCounter_var := resetCounter_var + 1;
+				pumpeBig1_DO := FALSE;
+				pumpeBig2_DO := FALSE;
+				pumpeBig3_DO := FALSE;
+				pumpeBig4_DO := FALSE;
+				pumpeSmall1_DO := FALSE;
+				pumpeSmall2_DO := FALSE;
+				pumpeSmall3_DO := FALSE;
+				pumpeSmall4_DO := FALSE;
+				pumpeSmall5_DO := FALSE;
+				pumpeSmall6_DO := FALSE;
+				
+				counterBecherspender_var := 0;
+				counterEisstation_var := 0;
+				counterZitronenspender_var := 0;
+				counterCocktailmixer_var := 0;
+				
+				directionThreadmillleft_DO := 0;
+				
+				// Fährt nich weiter, wenn hinten der Taster gedrückt wird
+				IF bechererkennungAusgabe_DI = FALSE THEN
+					directionTreadmillright_DO := 1;
+				ELSE
+					directionTreadmillright_DO := 0;
+				END_IF
+			ELSE
+				directionTreadmillright_DO := 0;
+				currentStation_var := 4; 
+				currentBecherausgabeState_var := 2;
+				counterBecherentnahme_var := 100;
+	
+				resetToStart_var := FALSE;
+			END_IF
 		END_IF
 	END_IF
 END_PROGRAM
