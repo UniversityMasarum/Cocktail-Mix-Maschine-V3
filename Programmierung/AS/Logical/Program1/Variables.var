@@ -9,35 +9,33 @@ VAR
 	pumptime_02 : TIME;
 	pumptime_03 : TIME;
 	pumptime_04 : TIME;
-	ml_wodkacola_wodka : TIME;
-	ml_wodkacola_cola : TIME;
-	ml_wodkaosaft_osaft : TIME;
-	ml_wodkaosaft_wodka : TIME;
-	ml_rumcola_cola : TIME;
-	ml_rumcola_rum : TIME;
-	ml_kirschcola_cola : TIME;
-	ml_kirschcola_kirsch : TIME;
-	ml_gruenewiese_osaft : TIME;
-	ml_gruenewiese_bc : TIME;
-	ml_angelblue_sprite : TIME;
-	ml_angelblue_bc : TIME;
-	ml_angelblue_wodka : TIME;
-	ml_brassmonkey_osaft : TIME;
-	ml_brassmonkey_wodka : TIME;
-	ml_brassmonkey_rum : TIME;
-	ml_kiba_banane : TIME;
-	ml_kiba_kirsch : TIME;
-	ml_gintonic_tonic : TIME;
-	ml_gintonic_gin : TIME;
-	ml_osaft : TIME;
-	ml_cola : TIME;
-	ml_banane : TIME;
-	ml_tonic : TIME;
-	ml_sprite : TIME;
-	ml_bluelagoon_sprite : TIME;
-	ml_bluelagoon_bc : TIME;
-	
-	
+	ml_wodkacola_wodka : UINT;
+	ml_wodkacola_cola : UINT;
+	ml_wodkaosaft_osaft : UINT;
+	ml_wodkaosaft_wodka : UINT;
+	ml_rumcola_cola : UINT;
+	ml_rumcola_rum : UINT;
+	ml_kirschcola_cola : UINT;
+	ml_kirschcola_kirsch : UINT;
+	ml_gruenewiese_osaft : UINT;
+	ml_gruenewiese_bc : UINT;
+	ml_angelblue_sprite : UINT;
+	ml_angelblue_bc : UINT;
+	ml_angelblue_wodka : UINT;
+	ml_brassmonkey_osaft : UINT;
+	ml_brassmonkey_wodka : UINT;
+	ml_brassmonkey_rum : UINT;
+	ml_kiba_banane : UINT;
+	ml_kiba_kirsch : UINT;
+	ml_gintonic_tonic : UINT;
+	ml_gintonic_gin : UINT;
+	ml_osaft : UINT;
+	ml_cola : UINT;
+	ml_banane : UINT;
+	ml_tonic : UINT;
+	ml_sprite : UINT;
+	ml_bluelagoon_sprite : UINT;
+	ml_bluelagoon_bc : UINT;
 	wodka_cola_var : BOOL := FALSE;
 	kirschcola_var : BOOL := FALSE;
 	testcocktail_var : BOOL := FALSE;
@@ -54,7 +52,6 @@ VAR
 	tonic_var : BOOL := FALSE;
 	sprite_var : BOOL := FALSE;
 	bluelagoon_var : BOOL := FALSE;
-	
 END_VAR
 VAR RETAIN
 	Anzahl_Cocktails : ARRAY[0..19] OF INT := [20(0)];
