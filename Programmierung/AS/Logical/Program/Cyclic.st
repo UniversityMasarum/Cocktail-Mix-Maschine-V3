@@ -182,7 +182,7 @@ PROGRAM _CYCLIC
 				stationBecherentnahme_var:
 					CASE BecherAusgabe_var OF
 						0: // Stoppt an Station 
-							IF inductiveSensorBecherausgabe_DI = FALSE THEN
+							IF inductiveSensorBecherausgabe_DI = FALSE OR bechererkennungAusgabe_DI = TRUE THEN
 								counterCocktailmixer_var := 0;
 								BecherAusgabe_var := 1;
 								cocktailFinished_var := 0;
