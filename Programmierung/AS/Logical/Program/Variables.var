@@ -1,4 +1,5 @@
 VAR
+	currentBecherausgabeState_var : USINT := 0; (*Switch Case Becherausgabe*)
 	armCocktailstation_DO : BOOL := FALSE; (*Gibt Signal für Arm nach oben und unten*)
 	BecherAusgabe_var : USINT := 0; (*Noch nicht an station = 0, an Station = 1, Aus Station genommen = 2, Wieder an Startposition = 3*)
 	bechererkennungAusgabe_DI : BOOL := TRUE; (*Wenn endlageschalter nicht gedrückt ist, Becher entnommen*)

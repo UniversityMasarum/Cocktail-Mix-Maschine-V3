@@ -24,7 +24,7 @@ PROGRAM _CYCLIC
 		directionTreadmillright_DO := FALSE;
 		directionThreadmillleft_DO := FALSE;
 	ELSE
-				// Reinigungsprogramm
+		// Reinigungsprogramm
 		IF reingigunsmodus_var = TRUE THEN
 			IF directionThreadmill_left_var = TRUE THEN
 				directionThreadmillleft_DO := 0;
@@ -109,7 +109,7 @@ PROGRAM _CYCLIC
 						ELSE
 							zitronenspenderAktivieren_DO := FALSE;
 						END_IF
-						
+							
 						IF counterZitronenspender_var > 50 THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
@@ -176,46 +176,47 @@ PROGRAM _CYCLIC
 									currentStation_var := currentStation_var + 1;
 									currentCocktialState_var := 0;
 								END_IF
-							END_CASE
+						END_CASE
 					END_IF								
 		
 				stationBecherentnahme_var:
-					// Wenn Becher steht
-					IF BecherAusgabe_var = 1 THEN
-						// drei Sekunden verzögerung zum verlässlichen erkennen des Endlagenschalters
-						IF counterBecherentnahme_var >= 30 THEN 
-							// Erkennt wenn Becher Ausgegeben wurde --> Wird als zweites ausgeführt
-							IF bechererkennungAusgabe_DI = FALSE THEN
-								BecherAusgabe_var := 2;
+					CASE BecherAusgabe_var OF
+						0: // Stoppt an Station 
+							IF inductiveSensorBecherausgabe_DI = FALSE THEN
+								counterCocktailmixer_var := 0;
+								BecherAusgabe_var := 1;
+								cocktailFinished_var := 0;
+								stationPercentage_var := 100;
+								directionTreadmillright_DO := 0;
+								delayCocktailStation_var := 0;
 							END_IF
-						ELSE
-							counterBecherentnahme_var := counterBecherentnahme_var + 1;
-						END_IF
-					END_IF
-					
-					// Stoppt an Station --> Wird zuerst ausgeführt
-					IF BecherAusgabe_var = 0 AND inductiveSensorBecherausgabe_DI = FALSE THEN
-						counterCocktailmixer_var := 0;
-						BecherAusgabe_var := 1;
-						cocktailFinished_var := 0;
-						stationPercentage_var := 100;
-						directionTreadmillright_DO := 0;
-						delayCocktailStation_var := 0;
-					END_IF
-					
-					// Zählt Für Verzögerung beim herausnehmen 
-					IF counterBecherentnahme_var > 0 AND BecherAusgabe_var = 2 THEN
-						counterBecherentnahme_var := counterBecherentnahme_var + 1; 
-					END_IF
-					
-					// Fährt mit verzögerung wieder zum Start
-					IF BecherAusgabe_var = 2 AND counterBecherentnahme_var >= 60 THEN
-						directionTreadmillright_DO := 0;
-						directionThreadmillleft_DO := 1;	
-						currentStation_var := 0;
-						cocktailChosen_var := FALSE;	
-						BecherAusgabe_var := 3;
-					END_IF
+						
+						1:// Wenn Becher steht
+							// drei Sekunden verzögerung zum verlässlichen erkennen des Endlagenschalters
+							IF counterBecherentnahme_var >= 30 THEN 
+								// Erkennt wenn Becher Ausgegeben wurde --> Wird als zweites ausgeführt
+								IF bechererkennungAusgabe_DI = FALSE THEN
+									BecherAusgabe_var := 2;
+								END_IF
+							ELSE
+								counterBecherentnahme_var := counterBecherentnahme_var + 1;
+							END_IF
+
+						2: 
+							// Zählt Für Verzögerung beim herausnehmen 
+							IF counterBecherentnahme_var > 0 THEN
+								counterBecherentnahme_var := counterBecherentnahme_var + 1; 
+							END_IF
+							
+							// Fährt mit verzögerung wieder zum Start
+							IF counterBecherentnahme_var >= 60 THEN
+								directionTreadmillright_DO := 0;
+								directionThreadmillleft_DO := 1;	
+								currentStation_var := 0;
+								cocktailChosen_var := FALSE;	
+								BecherAusgabe_var := 3;
+							END_IF
+					END_CASE
 			END_CASE
 		END_IF
 
@@ -244,5 +245,4 @@ PROGRAM _CYCLIC
 			resetToStart_var := FALSE;
 		END_IF
 	END_IF
-	
 END_PROGRAM
