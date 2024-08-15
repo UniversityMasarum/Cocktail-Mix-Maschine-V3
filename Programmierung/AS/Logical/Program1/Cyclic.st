@@ -24,14 +24,11 @@ PROGRAM _CYCLIC
 	pumpeSmall6_DO 	blue curacao
 	
 	*)
-	// Aus der Visualisierung
-	IF counterCocktailmixer_var = 1 OR counterCocktailmixer_var = 2 THEN
-			cocktail_started := FALSE;
-		END_IF
+
 	
-		IF (cocktail_start = FALSE AND cocktail_started = FALSE) THEN
-			cocktail_start := TRUE;
-		END_IF
+	IF (cocktail_start = FALSE AND cocktail_started = FALSE) THEN
+		cocktail_start := TRUE;
+	END_IF
 		
 	// Wenn Reinigungsprogramm aktiviert ist, soll kein Cocktail gemacht werden
 		IF reingigunsmodus_var = FALSE AND ERROR_DI = FALSE THEN

@@ -109,7 +109,7 @@ PROGRAM _CYCLIC
 						ELSE
 							zitronenspenderAktivieren_DO := FALSE;
 						END_IF
-							
+						
 						IF counterZitronenspender_var > 50 THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
