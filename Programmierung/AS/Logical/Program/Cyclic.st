@@ -89,8 +89,13 @@ PROGRAM _CYCLIC
 							eisspenderAktivieren_DO := FALSE;
 						END_IF
 							
+						// Wenn die Lichtschrankenrückmeldung kommt
+						IF lichtschrankeEismaschine_DI = TRUE AND hilfsCounterEismaschine_var = 0 AND counterEisstation_var > 5 THEN
+							hilfsCounterEismaschine_var := counterEisstation_var + 30;
+						END_IF
+						
 						// Wenn der Wagen an der Station für 15 Sekunden steht oder das Signal vom Arduino kommt, das Lichtschranke ausgelöst wurde
-						IF counterEisstation_var > 150 OR lichtschrankeEismaschine_DI = TRUE THEN
+						IF counterEisstation_var > 3000 OR hilfsCounterEismaschine_var <= counterEisstation_var AND hilfsCounterEismaschine_var <> 0 THEN
 							directionTreadmillright_DO := 1;
 							currentStation_var := currentStation_var + 1;
 							stationPercentage_var := 40;
@@ -99,6 +104,7 @@ PROGRAM _CYCLIC
 								
 				stationZitronenspender_var:
 					IF inductiveSensorZitronenspende_DI = FALSE OR counterZitronenspender_var > 0 THEN
+						hilfsCounterEismaschine_var := 0;
 						directionTreadmillright_DO := 0;
 						counterEisstation_var := 0;
 						counterZitronenspender_var := counterZitronenspender_var + 1;

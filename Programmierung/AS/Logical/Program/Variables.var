@@ -21,7 +21,7 @@ VAR
 	BecherspenderAktivieren_DO : BOOL := FALSE; (*Aktiviert Becherspender --> Arduino *)
 	directionTreadmillright_DO : BOOL := FALSE; (*Steuert das Laufband nach rechts*)
 	counterBecherspender_var : USINT := 0; (*Setzt die Zeit für die Sation Becherspender*)
-	counterEisstation_var : USINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
+	counterEisstation_var : UINT := 0; (*Setzt die Zeit für die Sation Eisstation*)
 	counterBecherentnahme_var : USINT := 0; (*Setzt die Zeit für die Station Becherentnahme*)
 	currentBecherausgabeState_var : USINT := 0; (*Switch Case Becherausgabe*)
 	currentCocktialState_var : USINT := 0; (*Läuft die einzelnen unterstationen im Cocktailmixer ab*)
@@ -37,5 +37,10 @@ VAR CONSTANT
 	stationBecherspender_var : USINT := 0; (*Station Becherspender als Festwerte*)
 	stationCocktailmixer_var : USINT := 3; (*Station Cocktailmixer als Festwerte*)
 	stationEismaschine_var : USINT := 1; (*Station Eismaschine als Festwerte*)
+END_VAR
+VAR
+	hilfsCounterEismaschine_var : UDINT := 0; (*Zählt einen Delay ein, damit der Wagen nicht direkt weiterfährt, wenn die Eiswürfel kommen*)
+END_VAR
+VAR CONSTANT
 	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
 END_VAR
