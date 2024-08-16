@@ -6,6 +6,9 @@
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="InternetAddress" Value="192.168.10.4" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
     <Parameter ID="PasswordVNC" Value="" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />

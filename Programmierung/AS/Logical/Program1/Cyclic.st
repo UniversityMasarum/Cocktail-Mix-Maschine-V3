@@ -87,23 +87,23 @@ PROGRAM _CYCLIC
 					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
 					pumpeSmall3_DO:=TOF_03.Q;
 				
-(*				brassmonkey:
+			brassmonkey:
 					pumptime_01 :=	UINT_TO_TIME(ml_brassmonkey_osaft)*118;
-					pumptime_02 :=	UINT_TO_TIME(ml_brassmonkey_rum)*350;
+					pumptime_02 :=	UINT_TO_TIME(ml_brassmonkey_rum)*420;
 					pumptime_03 := UINT_TO_TIME(ml_angelblue_wodka)*330;
 							
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig4_DO:=TOF_01.Q;
 							
 					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall3_DO:=TOF_02.Q;
+					pumpeSmall2_DO:=TOF_02.Q;
 						
 					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
-					pumpeSmall2_DO:=TOF_03.Q;
+					pumpeSmall3_DO:=TOF_03.Q;
 				
 				wodka_osaft:
-					pumptime_01 :=	(ml_wodkaosaft_osaft*144);
-					pumptime_02 :=	(ml_wodkaosaft_wodka*400);
+					pumptime_01 :=	UINT_TO_TIME(ml_wodkaosaft_osaft)*118;
+					pumptime_02 :=	UINT_TO_TIME(ml_wodkaosaft_wodka)*330;
 				
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig4_DO:=TOF_01.Q;
@@ -122,8 +122,8 @@ PROGRAM _CYCLIC
 					pumpeSmall3_DO:=TOF_02.Q;
 			
 				kiba:
-					pumptime_01 :=	(ml_kiba_banane*144);
-					pumptime_02 :=	(ml_kiba_kirsch*400);
+					pumptime_01 :=	UINT_TO_TIME(ml_kiba_banane)*105;
+					pumptime_02 :=	UINT_TO_TIME(ml_kiba_kirsch)*390;
 						
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig3_DO:=TOF_01.Q;
@@ -132,8 +132,8 @@ PROGRAM _CYCLIC
 					pumpeSmall5_DO:=TOF_02.Q;
 			
 				gintonic:
-					pumptime_01 :=	(ml_gintonic_tonic*400);
-					pumptime_02 :=	(ml_gintonic_gin*400);
+					pumptime_01 :=	UINT_TO_TIME(ml_gintonic_tonic)*390;
+					pumptime_02 :=	UINT_TO_TIME(ml_gintonic_gin)*300;
 							
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeSmall1_DO:=TOF_01.Q;
@@ -142,9 +142,8 @@ PROGRAM _CYCLIC
 					pumpeSmall4_DO:=TOF_02.Q;
 				
 				bluelagoon: 
-					
-					pumptime_01 :=	(ml_bluelagoon_sprite*144);
-					pumptime_02 :=	(ml_bluelagoon_bc*400);
+					pumptime_01 :=	UINT_TO_TIME(ml_bluelagoon_sprite)*111;
+					pumptime_02 :=	UINT_TO_TIME(ml_bluelagoon_bc)*350;
 					
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig1_DO:=TOF_01.Q;
@@ -153,31 +152,31 @@ PROGRAM _CYCLIC
 					pumpeSmall6_DO:=TOF_02.Q;
 				
 				osaft:
-					pumptime_01 :=	(ml_osaft*144);
+					pumptime_01 :=	UINT_TO_TIME(ml_osaft)*118;
 									
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig4_DO:=TOF_01.Q;
 				cola:
-					pumptime_01 :=	(ml_cola*144);
-										
+					pumptime_01 :=	UINT_TO_TIME(ml_cola)*108;
+											
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig2_DO:=TOF_01.Q;
 				banane:
-					pumptime_01 :=	(ml_banane*144);
+					pumptime_01 :=	UINT_TO_TIME(ml_banane)*105;
 										
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig3_DO:=TOF_01.Q;
 				tonic: 
-					pumptime_01 :=	(ml_tonic*400);
+					pumptime_01 :=	UINT_TO_TIME(ml_tonic)*390;
 											
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeSmall1_DO:=TOF_01.Q;
 				sprite:
-					pumptime_01 :=	(ml_sprite*144);
+					pumptime_01 :=	UINT_TO_TIME(ml_sprite)*111;
 											
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig1_DO:=TOF_01.Q;
-*)
+
 			END_CASE
 		END_IF
 		// IF Cocktail was chosen in the visualisation --> Cocktailchosen == True
