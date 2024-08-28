@@ -1,0 +1,19 @@
+VAR
+	Random_Number : ARRAY[1..20] OF USINT; (*Array der Zufallszahlen*)
+	m : USINT; (*Hilfsvariable*)
+	i : USINT; (*Hilfsvariable*)
+	Number_Counter : ARRAY[1..10] OF USINT; (*Zählt, wie oft die Zutaten jeweils vertreten sind*)
+	zutat_Menge : ARRAY[1..10] OF UINT;
+	zutat_JaNein : ARRAY[1..10] OF BOOL;
+	ml : USINT;
+	cycle_counter : LREAL; (*Anzahl der durchlaufenen Zyklen zählen*)
+	access_counter : USINT; (*Kontrollvariable für Tests, Zählt Anzahl Zugriffe auf Mengenarray bei Mengenbestimmung*)
+	k : USINT; (*Hilfsvariable*)
+	n : USINT; (*Hilfsvariable*)
+	p : USINT; (*Hilfsvariable*)
+	q : USINT; (*Hilfsvariable*)
+	r : USINT; (*Hilfsvariable*)
+	ml_ausgabe : UINT; (*Nur Informationsvariable, um zu testen, wieviele ml am ende tatsächlich rauskommen*)
+	menge_alkohol : UINT; (*zum Filtern von Ausreißern*)
+	menge_alkoholfrei : UINT; (*zum Filtern von Ausreißern*)
+END_VAR
