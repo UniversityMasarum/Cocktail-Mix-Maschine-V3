@@ -34,7 +34,7 @@ PROGRAM _CYCLIC
 		IF reingigunsmodus_var = FALSE AND ERROR_DI = FALSE THEN
 			CASE cocktail_var OF
 				wodka_cola:
-				pumptime_01 :=	UINT_TO_TIME(ml_wodkacola_cola)*108;
+					pumptime_01 :=	UINT_TO_TIME(ml_wodkacola_cola)*108;
 					pumptime_02 :=	UINT_TO_TIME(ml_wodkacola_wodka)*330;
 				
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
@@ -44,7 +44,7 @@ PROGRAM _CYCLIC
 					pumpeSmall3_DO:=TOF_02.Q;
 				
 				rumcola: 
-				pumptime_01 :=	UINT_TO_TIME(ml_rumcola_cola)*108;
+					pumptime_01 :=	UINT_TO_TIME(ml_rumcola_cola)*108;
 					pumptime_02 :=	UINT_TO_TIME(ml_rumcola_rum)*420;
 				
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );

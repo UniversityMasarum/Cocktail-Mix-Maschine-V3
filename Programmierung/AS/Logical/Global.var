@@ -15,4 +15,7 @@ VAR
 	reingigunsmodus_var : BOOL := FALSE; (*Gibt an, ob die Reinigung aktiviert wurde*)
 	cocktail_started : BOOL; (*Triggert die Pumpen für den aktuellen Cocktail*)
 	ERROR_DI : BOOL := FALSE; (*STOPPT SPS KOMPLETT*)
+	zufallscocktailAktivieren : BOOL;
+	zutat_JaNein_ok : ARRAY[1..10] OF BOOL; (*Array mit Info, ob Zutat verwendet wird oder nicht*)
+	zutat_Menge_ok : ARRAY[1..10] OF UINT; (*Array mit Info, wie viele ml der Zutat rein sollen*)
 END_VAR

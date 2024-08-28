@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/16/2024 17:08:21" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="08/16/2024 15:18:05" />
   </TimeStamps>
   <Modules>
     <Module Name="X20CP1382" Type="X20CP1382" X="346" Y="83" />
@@ -18,7 +18,7 @@
     <Module Name="6PPT30.0702-20W" Type="6PPT30.0702-20W" X="100" Y="-56" />
   </Modules>
   <Links>
-    <Link From="X20CP1382" To="6PPT30.0702-20W" FromPort="IF2" ToPort="ETH1" IsRoutedByUser="False">
+    <Link From="6PPT30.0702-20W" To="X20CP1382" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
       <Point X="380" Y="171" />
       <Point X="380" Y="171" />
       <Point X="380" Y="186" />
