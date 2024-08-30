@@ -7,7 +7,6 @@
     <Object Type="Package" Description="Globale Bibliotheken">Libraries</Object>
     <Object Type="Program" Language="IEC">Program</Object>
     <Object Type="Program" Language="IEC">Program1</Object>
-    <Object Type="Library" Language="IEC">Library</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Program" Language="IEC">Zufall</Object>
   </Objects>

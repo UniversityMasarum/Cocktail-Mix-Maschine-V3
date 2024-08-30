@@ -17,6 +17,7 @@ TYPE
 		osaft,
 		banane,
 		tonic,
-		sprite
+		sprite,
+		zufallscocktail
 		);
 END_TYPE

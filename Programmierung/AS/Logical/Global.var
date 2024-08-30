@@ -18,4 +18,5 @@ VAR
 	zufallscocktailAktivieren : BOOL;
 	zutat_JaNein_ok : ARRAY[1..10] OF BOOL; (*Array mit Info, ob Zutat verwendet wird oder nicht*)
 	zutat_Menge_ok : ARRAY[1..10] OF UINT; (*Array mit Info, wie viele ml der Zutat rein sollen*)
+	zufallscocktail_var : BOOL := FALSE;
 END_VAR

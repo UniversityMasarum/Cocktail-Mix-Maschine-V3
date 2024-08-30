@@ -1,195 +1,223 @@
  
 PROGRAM _CYCLIC
-	//code, um die Pumpenansteuerung mittels TONs zu testen
-	(*
-	p1 - 500ml/min
-	p2 - 550ml/min (Cola braucht es ca 
-	p3 - 550ml/min
-	p4 - 500ml/min
-
-	p6 - 140ml/min
-	p7 - 150ml/min
-	p1 - 140ml/min
-	p1 - 150ml/min
-	
-	pumpeBig1_DO 	sprite
-	pumpeBig2_DO 	cola
-	pumpeBig3_DO 	banane
-	pumpeBig4_DO 	osaft
-	pumpeSmall1_DO 	tonic
-	pumpeSmall2_DO 	rum
-	pumpeSmall3_DO 	wodka
-	pumpeSmall4_DO 	gin
-	pumpeSmall5_DO 	kirsch
-	pumpeSmall6_DO 	blue curacao
-	
-	*)
-
 	
 	IF (cocktail_start = FALSE AND cocktail_started = FALSE) THEN
 		cocktail_start := TRUE;
 	END_IF
 		
 	// Wenn Reinigungsprogramm aktiviert ist, soll kein Cocktail gemacht werden
-		IF reingigunsmodus_var = FALSE AND ERROR_DI = FALSE THEN
-			CASE cocktail_var OF
-				wodka_cola:
-					pumptime_01 :=	UINT_TO_TIME(ml_wodkacola_cola)*108;
-					pumptime_02 :=	UINT_TO_TIME(ml_wodkacola_wodka)*330;
+	IF reingigunsmodus_var = FALSE AND ERROR_DI = FALSE THEN
+		CASE cocktail_var OF
+			wodka_cola:
+				pumptime_01 :=	UINT_TO_TIME(ml_wodkacola_cola)*108;
+				pumptime_02 :=	UINT_TO_TIME(ml_wodkacola_wodka)*330;
 				
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig2_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig2_DO:=TOF_01.Q;
 				
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall3_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall3_DO:=TOF_02.Q;
 				
-				rumcola: 
-					pumptime_01 :=	UINT_TO_TIME(ml_rumcola_cola)*108;
-					pumptime_02 :=	UINT_TO_TIME(ml_rumcola_rum)*420;
+			rumcola: 
+				pumptime_01 :=	UINT_TO_TIME(ml_rumcola_cola)*108;
+				pumptime_02 :=	UINT_TO_TIME(ml_rumcola_rum)*420;
 				
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig2_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig2_DO:=TOF_01.Q;
 				
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall2_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall2_DO:=TOF_02.Q;
 				
-				kirschcola:
-					pumptime_01 :=	UINT_TO_TIME(ml_kirschcola_cola)*108;
-					pumptime_02 :=	UINT_TO_TIME(ml_kirschcola_kirsch)*390;
+			kirschcola:
+				pumptime_01 :=	UINT_TO_TIME(ml_kirschcola_cola)*108;
+				pumptime_02 :=	UINT_TO_TIME(ml_kirschcola_kirsch)*390;
 					
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig2_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig2_DO:=TOF_01.Q;
 					
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall5_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall5_DO:=TOF_02.Q;
 				
-				gruenewiese:
-					pumptime_01 :=	UINT_TO_TIME(ml_gruenewiese_osaft)*118;
-					pumptime_02 :=	UINT_TO_TIME(ml_gruenewiese_bc)*350;
+			gruenewiese:
+				pumptime_01 :=	UINT_TO_TIME(ml_gruenewiese_osaft)*118;
+				pumptime_02 :=	UINT_TO_TIME(ml_gruenewiese_bc)*350;
 						
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig4_DO:=TOF_01.Q;
 						
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall6_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall6_DO:=TOF_02.Q;
 				
-				angelblue:
-					pumptime_01 :=	UINT_TO_TIME(ml_angelblue_sprite)*111;
-					pumptime_02 :=	UINT_TO_TIME(ml_angelblue_bc)*350;
-					pumptime_03 := UINT_TO_TIME(ml_angelblue_wodka)*330;
+			angelblue:
+				pumptime_01 :=	UINT_TO_TIME(ml_angelblue_sprite)*111;
+				pumptime_02 :=	UINT_TO_TIME(ml_angelblue_bc)*350;
+				pumptime_03 := UINT_TO_TIME(ml_angelblue_wodka)*330;
 							
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig1_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig1_DO:=TOF_01.Q;
 							
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall6_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall6_DO:=TOF_02.Q;
 						
-					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
-					pumpeSmall3_DO:=TOF_03.Q;
+				TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
+				pumpeSmall3_DO:=TOF_03.Q;
 				
 			brassmonkey:
-					pumptime_01 :=	UINT_TO_TIME(ml_brassmonkey_osaft)*118;
-					pumptime_02 :=	UINT_TO_TIME(ml_brassmonkey_rum)*420;
-					pumptime_03 := UINT_TO_TIME(ml_angelblue_wodka)*330;
+				pumptime_01 :=	UINT_TO_TIME(ml_brassmonkey_osaft)*118;
+				pumptime_02 :=	UINT_TO_TIME(ml_brassmonkey_rum)*420;
+				pumptime_03 := UINT_TO_TIME(ml_angelblue_wodka)*330;
 							
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig4_DO:=TOF_01.Q;
 							
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall2_DO:=TOF_02.Q;
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall2_DO:=TOF_02.Q;
 						
+				TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
+				pumpeSmall3_DO:=TOF_03.Q;
+				
+			wodka_osaft:
+				pumptime_01 :=	UINT_TO_TIME(ml_wodkaosaft_osaft)*118;
+				pumptime_02 :=	UINT_TO_TIME(ml_wodkaosaft_wodka)*330;
+				
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig4_DO:=TOF_01.Q;
+				
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall3_DO:=TOF_02.Q;
+			
+			testcocktail:
+				pumptime_01 :=	T#2s;
+				pumptime_02 :=	T#2s;
+
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig4_DO:=TOF_01.Q;
+							
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall3_DO:=TOF_02.Q;
+			
+			kiba:
+				pumptime_01 :=	UINT_TO_TIME(ml_kiba_banane)*105;
+				pumptime_02 :=	UINT_TO_TIME(ml_kiba_kirsch)*390;
+						
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig3_DO:=TOF_01.Q;
+						
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall5_DO:=TOF_02.Q;
+			
+			gintonic:
+				pumptime_01 :=	UINT_TO_TIME(ml_gintonic_tonic)*390;
+				pumptime_02 :=	UINT_TO_TIME(ml_gintonic_gin)*300;
+							
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeSmall1_DO:=TOF_01.Q;
+							
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall4_DO:=TOF_02.Q;
+				
+			bluelagoon: 
+				pumptime_01 :=	UINT_TO_TIME(ml_bluelagoon_sprite)*111;
+				pumptime_02 :=	UINT_TO_TIME(ml_bluelagoon_bc)*350;
+					
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig1_DO:=TOF_01.Q;
+					
+				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+				pumpeSmall6_DO:=TOF_02.Q;
+				
+			zufallscocktail:
+				pumptime_01 :=	UINT_TO_TIME(zutat_Menge_ok[1])*111;
+				pumptime_02 :=	UINT_TO_TIME(zutat_Menge_ok[2])*108;
+				pumptime_03 :=	UINT_TO_TIME(zutat_Menge_ok[3])*105;
+				pumptime_02 :=	UINT_TO_TIME(zutat_Menge_ok[4])*118;
+				pumptime_05 :=	UINT_TO_TIME(zutat_Menge_ok[5])*390;
+				pumptime_06 :=	UINT_TO_TIME(zutat_Menge_ok[6])*420;
+				pumptime_07 :=	UINT_TO_TIME(zutat_Menge_ok[7])*330;
+				pumptime_08 :=	UINT_TO_TIME(zutat_Menge_ok[8])*300;
+				pumptime_09 :=	UINT_TO_TIME(zutat_Menge_ok[9])*390;
+				pumptime_10 :=	UINT_TO_TIME(zutat_Menge_ok[10])*350;
+					
+				IF zutat_JaNein_ok[1] = TRUE THEN
+					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+					pumpeBig1_DO:=TOF_01.Q;
+				END_IF
+				IF zutat_JaNein_ok[2] = TRUE THEN
+					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
+					pumpeBig2_DO:=TOF_02.Q;
+				END_IF
+				IF zutat_JaNein_ok[3] = TRUE THEN
 					TOF_03(IN:= cocktail_start , PT:= pumptime_03 );
-					pumpeSmall3_DO:=TOF_03.Q;
-				
-				wodka_osaft:
-					pumptime_01 :=	UINT_TO_TIME(ml_wodkaosaft_osaft)*118;
-					pumptime_02 :=	UINT_TO_TIME(ml_wodkaosaft_wodka)*330;
-				
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
-				
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall3_DO:=TOF_02.Q;
-			
-				testcocktail:
-					pumptime_01 :=	T#2s;
-					pumptime_02 :=	T#2s;
-
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
-							
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall3_DO:=TOF_02.Q;
-			
-				kiba:
-					pumptime_01 :=	UINT_TO_TIME(ml_kiba_banane)*105;
-					pumptime_02 :=	UINT_TO_TIME(ml_kiba_kirsch)*390;
-						
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig3_DO:=TOF_01.Q;
-						
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall5_DO:=TOF_02.Q;
-			
-				gintonic:
-					pumptime_01 :=	UINT_TO_TIME(ml_gintonic_tonic)*390;
-					pumptime_02 :=	UINT_TO_TIME(ml_gintonic_gin)*300;
-							
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeSmall1_DO:=TOF_01.Q;
-							
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall4_DO:=TOF_02.Q;
-				
-				bluelagoon: 
-					pumptime_01 :=	UINT_TO_TIME(ml_bluelagoon_sprite)*111;
-					pumptime_02 :=	UINT_TO_TIME(ml_bluelagoon_bc)*350;
+					pumpeBig3_DO:=TOF_03.Q;
+				END_IF
+				IF zutat_JaNein_ok[4] = TRUE THEN
+					TOF_04(IN:= cocktail_start , PT:= pumptime_04 );
+					pumpeBig4_DO:=TOF_04.Q;
+				END_IF
+				IF zutat_JaNein_ok[5] = TRUE THEN
+					TOF_05(IN:= cocktail_start , PT:= pumptime_05 );
+					pumpeSmall1_DO:=TOF_05.Q;
+				END_IF
+				IF zutat_JaNein_ok[6] = TRUE THEN
+					TOF_06(IN:= cocktail_start , PT:= pumptime_06 );
+					pumpeSmall2_DO:=TOF_06.Q;
+				END_IF
+				IF zutat_JaNein_ok[7] = TRUE THEN
+					TOF_07(IN:= cocktail_start , PT:= pumptime_07 );
+					pumpeSmall3_DO:=TOF_07.Q;
+				END_IF
+				IF zutat_JaNein_ok[8] = TRUE THEN
+					TOF_08(IN:= cocktail_start , PT:= pumptime_08 );
+					pumpeSmall4_DO:=TOF_08.Q;
+				END_IF
+				IF zutat_JaNein_ok[9] = TRUE THEN
+					TOF_09(IN:= cocktail_start , PT:= pumptime_09 );
+					pumpeSmall5_DO:=TOF_09.Q;
+				END_IF
+				IF zutat_JaNein_ok[10] = TRUE THEN
+					TOF_10(IN:= cocktail_start , PT:= pumptime_10 );
+					pumpeSmall6_DO:=TOF_10.Q;
+				END_IF
 					
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig1_DO:=TOF_01.Q;
-					
-					TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
-					pumpeSmall6_DO:=TOF_02.Q;
-				
-				osaft:
-					pumptime_01 :=	UINT_TO_TIME(ml_osaft)*118;
+			osaft:
+				pumptime_01 :=	UINT_TO_TIME(ml_osaft)*118;
 									
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig4_DO:=TOF_01.Q;
-				cola:
-					pumptime_01 :=	UINT_TO_TIME(ml_cola)*108;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig4_DO:=TOF_01.Q;
+			cola:
+				pumptime_01 :=	UINT_TO_TIME(ml_cola)*108;
 											
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig2_DO:=TOF_01.Q;
-				banane:
-					pumptime_01 :=	UINT_TO_TIME(ml_banane)*105;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig2_DO:=TOF_01.Q;
+			banane:
+				pumptime_01 :=	UINT_TO_TIME(ml_banane)*105;
 										
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig3_DO:=TOF_01.Q;
-				tonic: 
-					pumptime_01 :=	UINT_TO_TIME(ml_tonic)*390;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig3_DO:=TOF_01.Q;
+			tonic: 
+				pumptime_01 :=	UINT_TO_TIME(ml_tonic)*390;
 											
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeSmall1_DO:=TOF_01.Q;
-				sprite:
-					pumptime_01 :=	UINT_TO_TIME(ml_sprite)*111;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeSmall1_DO:=TOF_01.Q;
+			sprite:
+				pumptime_01 :=	UINT_TO_TIME(ml_sprite)*111;
 											
-					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-					pumpeBig1_DO:=TOF_01.Q;
+				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
+				pumpeBig1_DO:=TOF_01.Q;
 
-			END_CASE
-		END_IF
-		// IF Cocktail was chosen in the visualisation --> Cocktailchosen == True
-		IF wodka_cola_var = 1 OR kirschcola_var = 1 OR testcocktail_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR gintonic_var = 1 OR bluelagoon_var = 1 OR osaft_var = 1 OR cola_var = 1 OR banane_var = 1 OR tonic_var = 1 OR sprite_var = 1 THEN
-			cocktailChosen_var := TRUE;
-		END_IF
+		END_CASE
+	END_IF
+	// IF Cocktail was chosen in the visualisation --> Cocktailchosen == True
+	IF wodka_cola_var = 1 OR kirschcola_var = 1 OR testcocktail_var = 1 OR wodka_osaft_var = 1 OR gruenewiese_var = 1 OR angelblue_var = 1 OR brassmonkey_var = 1 OR kiba_var = 1 OR rumcola_var = 1 OR gintonic_var = 1 OR bluelagoon_var = 1 OR osaft_var = 1 OR cola_var = 1 OR banane_var = 1 OR tonic_var = 1 OR sprite_var = 1 OR zufallscocktail_var = 1 THEN
+		cocktailChosen_var := TRUE;
+	END_IF
 		
-		IF (cocktail_start = TRUE AND cocktail_started = FALSE) THEN
-			cocktail_start := FALSE;
-			cocktail_started := TRUE;
+	IF (cocktail_start = TRUE AND cocktail_started = FALSE) THEN
+		cocktail_start := FALSE;
+		cocktail_started := TRUE;
 		
 		// Variable, dass Cocktail beendet wurde
-			cocktailFinished_var := TRUE;
+		cocktailFinished_var := TRUE;
 	END_IF	
 	
 	// Setzt den Schalter zurück
@@ -273,42 +301,9 @@ PROGRAM _CYCLIC
 		sprite_var := FALSE;
 		Anzahl_Cocktails [sprite] := Anzahl_Cocktails [sprite] + 1;
 	END_IF
-	
+	IF zufallscocktail_var = TRUE THEN
+		cocktail_var := zufallscocktail;
+		zufallscocktail_var := FALSE;
+		Anzahl_Cocktails [zufallscocktail] := Anzahl_Cocktails [zufallscocktail] + 1;
+	END_IF
 END_PROGRAM
-
-
-(*
-	CASE pump OF
-		
-		1: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe1_DO:=TOF_01.Q;
-		2: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe2_DO:=TOF_01.Q;
-		3: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe3_DO:=TOF_01.Q;
-		4: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe4_DO:=TOF_01.Q;
-		5: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe5_DO:=TOF_01.Q;
-		6: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe6_DO:=TOF_01.Q;
-		7: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe7_DO:=TOF_01.Q;
-		8: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe8_DO:=TOF_01.Q;
-		9: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe9_DO:=TOF_01.Q;
-		10: 
-			TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
-			pumpe10_DO:=TOF_01.Q;
-	END_CASE
-	*)

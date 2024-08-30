@@ -1,6 +1,6 @@
 
 PROGRAM _CYCLIC
-	IF zufallscocktailAktivieren = FALSE THEN
+	IF zufallscocktail_var = FALSE THEN
 			//willkürliches Verrechnen zum Erstellen eines Zufalls	
 			Random_Number[01] := (Random_Number[01] + 73) * ((Random_Number[17] + 1) MOD 14);
 			Random_Number[02] := (Random_Number[09] + 73) * ((Random_Number[12] + 1) MOD 16);
@@ -23,7 +23,7 @@ PROGRAM _CYCLIC
 			Random_Number[19] := (Random_Number[17] + 73) * ((Random_Number[19] + 1) MOD 19);
 			Random_Number[20] := (Random_Number[02] + 73) * ((Random_Number[11] + 1) MOD 16);
 			// MOD2: Durchschnittlich 2,6 Zutaten pro Cocktail
-			FOR i := 1 TO 5 DO		//Zutatjanein setzen für nicht-alkoholische, Zählen
+			FOR i := 1 TO 4 DO		//Zutatjanein setzen für nicht-alkoholische, Zählen
 				IF Random_Number[i] MOD 3 = 0 THEN	//durch MOD 2 häufiger als alkoholische    
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
@@ -32,7 +32,7 @@ PROGRAM _CYCLIC
 				END_IF	
 			END_FOR;
 			// MOD4: Durchschnittlich 2,6 Zutaten pro Cocktail
-			FOR i := 6 TO 10 DO		//Zutatjanein setzen für alkoholische, Zählen
+			FOR i := 5 TO 10 DO		//Zutatjanein setzen für alkoholische, Zählen
 				IF Random_Number[i] MOD 7 = 0 THEN		//durch MOD 4 weniger häufig als nich-alkoholische
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
@@ -58,7 +58,7 @@ PROGRAM _CYCLIC
 					r := 0;
 				END_IF
 				//Mengen durch unterschiedliche Modulo unterschiedlich festlegen	
-				FOR i := 1 TO 5 DO		
+				FOR i := 1 TO 4 DO		
 					IF zutat_JaNein[i] = TRUE THEN
 						//	m := ml/2;		//m enthält Anteil, der noch aufgefüllt werden muss, hier kann durchschnittliche Menge angepasst werden
 						k := (Random_Number[i+p]+r) MOD (ml);		//mit übriger Menge modulo rechnen, sodass maximale Menge nie überschritten
@@ -67,7 +67,7 @@ PROGRAM _CYCLIC
 						access_counter := access_counter + 1;		//nur Informationsgewinnung
 					END_IF
 				END_FOR;
-				FOR i := 6 TO 10 DO
+				FOR i := 5 TO 10 DO
 					IF zutat_JaNein[i] = TRUE THEN
 						m := ml/3;		
 						k := (Random_Number[i+p]+r) MOD (m);

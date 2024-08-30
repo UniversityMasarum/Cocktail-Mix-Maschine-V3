@@ -28,7 +28,6 @@
     <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
-    <LibraryObject Name="Library" Source="Library.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="asieccon" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="astime" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
