@@ -22,18 +22,20 @@ PROGRAM _CYCLIC
 			Random_Number[18] := (Random_Number[14] + 73) * ((Random_Number[03] + 1) MOD 14);
 			Random_Number[19] := (Random_Number[17] + 73) * ((Random_Number[19] + 1) MOD 19);
 			Random_Number[20] := (Random_Number[02] + 73) * ((Random_Number[11] + 1) MOD 16);
-			// MOD2: Durchschnittlich 2,6 Zutaten pro Cocktail
-			FOR i := 1 TO 4 DO		//Zutatjanein setzen für nicht-alkoholische, Zählen
-				IF Random_Number[i] MOD 3 = 0 THEN	//durch MOD 2 häufiger als alkoholische    
+
+		//festlegen, welche nicht-alkoholischen Zutaten verwendet werden
+			FOR i := 1 TO 4 DO		//ZutatJaNein setzen für nicht-alkoholische, Zählen
+				IF Random_Number[i] MOD 3 = 0 THEN	//durch MOD 3 häufiger als alkoholische    
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
 				ELSE
 					zutat_JaNein[i] := FALSE;
 				END_IF	
 			END_FOR;
-			// MOD4: Durchschnittlich 2,6 Zutaten pro Cocktail
+
+		//festlegen, welche alkoholischen Zutaten verwendet werden
 			FOR i := 5 TO 10 DO		//Zutatjanein setzen für alkoholische, Zählen
-				IF Random_Number[i] MOD 7 = 0 THEN		//durch MOD 4 weniger häufig als nich-alkoholische
+				IF Random_Number[i] MOD 7 = 0 THEN		//durch MOD 7 weniger häufig als nich-alkoholische
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
 				ELSE

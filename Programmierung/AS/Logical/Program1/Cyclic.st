@@ -1,17 +1,20 @@
  
 PROGRAM _CYCLIC
-	
+	//fallende Flanke für TOF_IN erzeugen
 	IF (cocktail_start = FALSE AND cocktail_started = FALSE) THEN
 		cocktail_start := TRUE;
 	END_IF
 		
 	// Wenn Reinigungsprogramm aktiviert ist, soll kein Cocktail gemacht werden
 	IF reingigunsmodus_var = FALSE AND ERROR_DI = FALSE THEN
+		//Ausgewählter Cocktail
 		CASE cocktail_var OF
 			wodka_cola:
+				//Laufzeiten der Pumpen aus Flussraten und benötigten Mengen berechnen
 				pumptime_01 :=	UINT_TO_TIME(ml_wodkacola_cola)*108;
 				pumptime_02 :=	UINT_TO_TIME(ml_wodkacola_wodka)*330;
 				
+				//Pumpen über TOF für errechnete Laufzeit anschalten
 				TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 				pumpeBig2_DO:=TOF_01.Q;
 				
@@ -85,7 +88,8 @@ PROGRAM _CYCLIC
 				
 				TOF_02(IN:= cocktail_start , PT:= pumptime_02 );
 				pumpeSmall3_DO:=TOF_02.Q;
-			
+				
+			//Cocktail mit kurzer Laufzeit für Tests
 			testcocktail:
 				pumptime_01 :=	T#2s;
 				pumptime_02 :=	T#2s;
@@ -127,6 +131,7 @@ PROGRAM _CYCLIC
 				pumpeSmall6_DO:=TOF_02.Q;
 				
 			zufallscocktail:
+				//Laufzeiten der Pumpen aus Flussraten und nötigen Mengen berechnen
 				pumptime_01 :=	UINT_TO_TIME(zutat_Menge_ok[1])*111;
 				pumptime_02 :=	UINT_TO_TIME(zutat_Menge_ok[2])*108;
 				pumptime_03 :=	UINT_TO_TIME(zutat_Menge_ok[3])*105;
@@ -137,7 +142,8 @@ PROGRAM _CYCLIC
 				pumptime_08 :=	UINT_TO_TIME(zutat_Menge_ok[8])*300;
 				pumptime_09 :=	UINT_TO_TIME(zutat_Menge_ok[9])*390;
 				pumptime_10 :=	UINT_TO_TIME(zutat_Menge_ok[10])*350;
-					
+				
+				//Pumpe wird nur aktiviert, wenn Komponente benötigt wird
 				IF zutat_JaNein_ok[1] = TRUE THEN
 					TOF_01(IN:= cocktail_start , PT:= pumptime_01 );
 					pumpeBig1_DO:=TOF_01.Q;
