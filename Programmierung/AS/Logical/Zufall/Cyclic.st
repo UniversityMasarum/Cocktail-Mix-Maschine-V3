@@ -24,8 +24,8 @@ PROGRAM _CYCLIC
 			Random_Number[20] := (Random_Number[02] + 73) * ((Random_Number[11] + 1) MOD 16);
 
 		//festlegen, welche nicht-alkoholischen Zutaten verwendet werden
-			FOR i := 1 TO 4 DO		//ZutatJaNein setzen für nicht-alkoholische, Zählen
-				IF Random_Number[i] MOD 3 = 0 THEN	//durch MOD 3 häufiger als alkoholische    
+			FOR i := 1 TO 4 DO									//ZutatJaNein setzen für nicht-alkoholische, Zählen
+				IF Random_Number[i] MOD 3 = 0 THEN				//durch MOD 3 häufiger als alkoholische    
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
 				ELSE
@@ -34,15 +34,15 @@ PROGRAM _CYCLIC
 			END_FOR;
 
 		//festlegen, welche alkoholischen Zutaten verwendet werden
-			FOR i := 5 TO 10 DO		//Zutatjanein setzen für alkoholische, Zählen
-				IF Random_Number[i] MOD 7 = 0 THEN		//durch MOD 7 weniger häufig als nich-alkoholische
-					zutat_JaNein[i] := TRUE;
+			FOR i := 5 TO 10 DO									//Zutatjanein setzen für alkoholische, Zählen
+				IF Random_Number[i] MOD 7 = 0 THEN				//durch MOD 7 weniger häufig als nich-alkoholische
+					zutat_JaNein[i] := TRUE;		
 					Number_Counter[i] := Number_Counter[i] + 1;
 				ELSE
 					zutat_JaNein[i] := FALSE;
 				END_IF	
 			END_FOR;
-
+			
 			ml := 30;		//Menge zurücksetzen
 			ml_ausgabe := 0; //Ausgabemenge zurücksetzen
 			FOR i := 1 TO 10 DO		//Mengenarray zurücksetzen
@@ -62,8 +62,7 @@ PROGRAM _CYCLIC
 				//Mengen durch unterschiedliche Modulo unterschiedlich festlegen	
 				FOR i := 1 TO 4 DO		
 					IF zutat_JaNein[i] = TRUE THEN
-						//	m := ml/2;		//m enthält Anteil, der noch aufgefüllt werden muss, hier kann durchschnittliche Menge angepasst werden
-						k := (Random_Number[i+p]+r) MOD (ml);		//mit übriger Menge modulo rechnen, sodass maximale Menge nie überschritten
+					k := (Random_Number[i+p]+r) MOD (ml);		//mit übriger Menge modulo rechnen, sodass maximale Menge nie überschritten wird
 						zutat_Menge[i] := zutat_Menge[i] + k * 10;
 						ml := ml - k;
 						access_counter := access_counter + 1;		//nur Informationsgewinnung
@@ -84,7 +83,9 @@ PROGRAM _CYCLIC
 				ml <= 3 OR n > 20 // Die Schleife wird verlassen, wenn ml <= 3 oder wenn zu viele Iterationen stattfinden
 			END_REPEAT;
 			n := 0;
-			REPEAT    //zu allen Zutatenmengen gleichmäßig etwas addieren, sodass Menge erfüllt wird
+		
+			//zu allen Zutatenmengen gleichmäßig etwas addieren, sodass Menge erfüllt wird
+			REPEAT    
 				FOR i := 10 TO 1 BY -1 DO
 					IF i < 5 THEN 
 						q := 2;
@@ -100,19 +101,25 @@ PROGRAM _CYCLIC
 				UNTIL ml <= 1 OR n > 20
 			END_REPEAT;
 		
-			FOR i:= 1 TO 10 DO		//zur Kontrolle, wieviel letztendlich rauskommt
+			//Gesamtmenge zur Informationsgewinnung
+			FOR i:= 1 TO 10 DO		
 				ml_ausgabe := ml_ausgabe + zutat_Menge[i];
 			END_FOR;
 		END_IF
 		menge_alkohol := 0;	
 		menge_alkoholfrei := 0;
+	
+		//Menge nicht-alkoholischer Getränke ermitteln
 		FOR i := 1 TO 4 DO
 			menge_alkoholfrei := menge_alkoholfrei + zutat_Menge[i];
 		END_FOR
+	
+		//Menge alkoholischer Getränke ermitteln
 		FOR i := 5 TO 10 DO
 			menge_alkohol := menge_alkohol + zutat_Menge[i];
 		END_FOR
-	
+		
+		//Mengen werden nur in weiterverwendete Arrays geschrieben, Getränk den Kriterien entspricht
 		IF menge_alkohol <= 280 AND menge_alkoholfrei <= 280 THEN
 			FOR i := 1 TO 10 DO
 				zutat_Menge_ok[i] := zutat_Menge[i];
