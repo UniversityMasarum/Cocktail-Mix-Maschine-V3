@@ -12,5 +12,6 @@
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton9" top="260" left="280" width="180" height="60" zIndex="8" text="Rum Cola" fontSize="18px" fontName="Times New Roman" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton10" top="340" left="560" width="140" height="60" zIndex="9" text="Testcocktail" fontSize="18px" fontName="Times New Roman" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton11" top="340" left="280" width="180" height="60" zIndex="10" text="Blue Lagoon" fontSize="18px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton12" top="180" left="520" width="180" height="60" zIndex="11" text="Zufallscocktail" fontSize="18px" fontName="Times New Roman" bold="true" />
   </Widgets>
 </Content>

@@ -232,6 +232,27 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="eventBinding_alc_11" comment="Zufallscocktail">
+      <Source xsi:type="widgets.brease.PushButton.Event" contentRefId="MainContent2" widgetRefId="PushButton12" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:zufallscocktail_var">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Navigate" pageId="page_5" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
     <EventBinding id="GoToMainpage">
       <Source xsi:type="opcUa.Event" refId="::Program:goToMainpage_var" event="ValueChanged" />
       <EventHandler>
