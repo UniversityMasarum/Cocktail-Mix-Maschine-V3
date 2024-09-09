@@ -24,7 +24,7 @@ PROGRAM _CYCLIC
 			Random_Number[20] := (Random_Number[02] + 73) * ((Random_Number[11] + 1) MOD 16);
 
 		//festlegen, welche nicht-alkoholischen Zutaten verwendet werden
-			FOR i := 1 TO 4 DO									//ZutatJaNein setzen für nicht-alkoholische, Zählen
+			FOR i := 1 TO 5 DO									//ZutatJaNein setzen für nicht-alkoholische, Zählen
 				IF Random_Number[i] MOD 3 = 0 THEN				//durch MOD 3 häufiger als alkoholische    
 					zutat_JaNein[i] := TRUE;
 					Number_Counter[i] := Number_Counter[i] + 1;
@@ -34,7 +34,7 @@ PROGRAM _CYCLIC
 			END_FOR;
 
 		//festlegen, welche alkoholischen Zutaten verwendet werden
-			FOR i := 5 TO 10 DO									//Zutatjanein setzen für alkoholische, Zählen
+			FOR i := 6 TO 10 DO									//Zutatjanein setzen für alkoholische, Zählen
 				IF Random_Number[i] MOD 7 = 0 THEN				//durch MOD 7 weniger häufig als nich-alkoholische
 					zutat_JaNein[i] := TRUE;		
 					Number_Counter[i] := Number_Counter[i] + 1;
@@ -60,17 +60,17 @@ PROGRAM _CYCLIC
 					r := 0;
 				END_IF
 				//Mengen durch unterschiedliche Modulo unterschiedlich festlegen	
-				FOR i := 1 TO 4 DO		
+				FOR i := 1 TO 5 DO		
 					IF zutat_JaNein[i] = TRUE THEN
-					k := (Random_Number[i+p]+r) MOD (ml);		//mit übriger Menge modulo rechnen, sodass maximale Menge nie überschritten wird
+					k := (Random_Number[i+p]+r) MOD (ml/2);		//mit übriger Menge modulo rechnen, sodass maximale Menge nie überschritten wird
 						zutat_Menge[i] := zutat_Menge[i] + k * 10;
 						ml := ml - k;
 						access_counter := access_counter + 1;		//nur Informationsgewinnung
 					END_IF
 				END_FOR;
-				FOR i := 5 TO 10 DO
+				FOR i := 6 TO 10 DO
 					IF zutat_JaNein[i] = TRUE THEN
-						m := ml/3;		
+						m := ml/5;		
 						k := (Random_Number[i+p]+r) MOD (m);
 						zutat_Menge[i] := zutat_Menge[i] + k * 10;
 						ml := ml - k;
@@ -87,7 +87,7 @@ PROGRAM _CYCLIC
 			//zu allen Zutatenmengen gleichmäßig etwas addieren, sodass Menge erfüllt wird
 			REPEAT    
 				FOR i := 10 TO 1 BY -1 DO
-					IF i < 5 THEN 
+					IF i < 6 THEN 
 						q := 2;
 					ELSE 
 						q := 1;
@@ -110,17 +110,17 @@ PROGRAM _CYCLIC
 		menge_alkoholfrei := 0;
 	
 		//Menge nicht-alkoholischer Getränke ermitteln
-		FOR i := 1 TO 4 DO
+		FOR i := 1 TO 5 DO
 			menge_alkoholfrei := menge_alkoholfrei + zutat_Menge[i];
 		END_FOR
 	
 		//Menge alkoholischer Getränke ermitteln
-		FOR i := 5 TO 10 DO
+		FOR i := 6 TO 10 DO
 			menge_alkohol := menge_alkohol + zutat_Menge[i];
 		END_FOR
 		
 		//Mengen werden nur in weiterverwendete Arrays geschrieben, Getränk den Kriterien entspricht
-		IF menge_alkohol <= 280 AND menge_alkoholfrei <= 280 THEN
+		IF menge_alkohol <= 270 AND menge_alkoholfrei <= 270 AND (menge_alkohol + menge_alkoholfrei) > 270 THEN
 			FOR i := 1 TO 10 DO
 				zutat_Menge_ok[i] := zutat_Menge[i];
 				zutat_JaNein_ok[i] := zutat_JaNein[i];

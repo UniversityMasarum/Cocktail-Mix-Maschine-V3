@@ -135,7 +135,7 @@ PROGRAM _CYCLIC
 				pumptime_01 :=	UINT_TO_TIME(zutat_Menge_ok[1])*111;
 				pumptime_02 :=	UINT_TO_TIME(zutat_Menge_ok[2])*108;
 				pumptime_03 :=	UINT_TO_TIME(zutat_Menge_ok[3])*105;
-				pumptime_02 :=	UINT_TO_TIME(zutat_Menge_ok[4])*118;
+				pumptime_04 :=	UINT_TO_TIME(zutat_Menge_ok[4])*118;
 				pumptime_05 :=	UINT_TO_TIME(zutat_Menge_ok[5])*390;
 				pumptime_06 :=	UINT_TO_TIME(zutat_Menge_ok[6])*420;
 				pumptime_07 :=	UINT_TO_TIME(zutat_Menge_ok[7])*330;
@@ -223,7 +223,7 @@ PROGRAM _CYCLIC
 		cocktail_started := TRUE;
 		
 		// Variable, dass Cocktail beendet wurde
-		cocktailFinished_var := TRUE;
+	//	cocktailFinished_var := TRUE;
 	END_IF	
 	
 	// Setzt den Schalter zurück
@@ -309,7 +309,9 @@ PROGRAM _CYCLIC
 	END_IF
 	IF zufallscocktail_var = TRUE THEN
 		cocktail_var := zufallscocktail;
-		zufallscocktail_var := FALSE;
+		IF cocktailFinished_var = TRUE THEN
+			zufallscocktail_var := FALSE;
+		END_IF	
 		Anzahl_Cocktails [zufallscocktail] := Anzahl_Cocktails [zufallscocktail] + 1;
 	END_IF
 END_PROGRAM
