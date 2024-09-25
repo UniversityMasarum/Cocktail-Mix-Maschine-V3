@@ -9,7 +9,7 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="220" left="440" width="320" height="140" zIndex="3" pageId="page_4" text="Informationen Wiki" fontSize="22px" fontName="Times New Roman" bold="true" enable="false" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Password" id="Password1" top="360" left="160" width="280" zIndex="1" />
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="360" left="40" width="120" zIndex="2" text="PW Eingabe: " />
+    <Widget xsi:type="widgets.brease.Password" id="Password1" top="380" left="160" width="280" zIndex="1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="380" left="40" width="120" zIndex="2" text="PW Eingabe: " />
   </Widgets>
 </Content>

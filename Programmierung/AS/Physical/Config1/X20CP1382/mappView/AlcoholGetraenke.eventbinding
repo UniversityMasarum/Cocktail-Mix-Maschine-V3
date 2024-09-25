@@ -191,7 +191,7 @@
       </EventHandler>
     </EventBinding>
     <EventBinding id="eventBinding_alc_9" comment="Testcocktail Button Binding">
-      <Source xsi:type="widgets.brease.PushButton.Event" contentRefId="MainContent2" widgetRefId="PushButton10" event="Click" />
+      <Source xsi:type="widgets.brease.PushButton.Event" contentRefId="MainContent3" widgetRefId="PushButton10" event="Click" />
       <EventHandler>
         <Sequence>
           <Step order="0">
@@ -237,11 +237,11 @@
       <EventHandler>
         <Sequence>
           <Step order="0">
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:zufallscocktail_var">
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-					</Target>
-				</Action>
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:zufallscocktail_var">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
           </Step>
           <Step order="1">
             <Action>

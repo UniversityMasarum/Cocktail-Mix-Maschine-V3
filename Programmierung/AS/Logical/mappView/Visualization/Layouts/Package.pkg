@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">Layout.layout</Object>
     <Object Type="File">NavigationLayout.layout</Object>
+    <Object Type="File">Portrait4_3.layout</Object>
   </Objects>
 </Package>

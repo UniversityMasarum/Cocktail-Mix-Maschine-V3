@@ -3,5 +3,7 @@
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File">Krake_boese.png</Object>
+    <Object Type="File">Kraken_smile.png</Object>
+    <Object Type="File">gradient.png</Object>
   </Objects>
 </Package>

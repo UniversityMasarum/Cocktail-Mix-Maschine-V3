@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="page_5" layoutRefId="layout_1">
+<pdef:Page xmlns:pdef="http://www.br-automation.com/iat2015/pageDefinition/v2" id="page_5" layoutRefId="layout_1" backGround="Media/Bilder/Kraken_smile.png">
   <Assignments>
     <Assignment type="Content" baseContentRefId="MainContent5" areaRefId="MainContent" />
     <Assignment type="Content" baseContentRefId="Header5" areaRefId="Header" />
