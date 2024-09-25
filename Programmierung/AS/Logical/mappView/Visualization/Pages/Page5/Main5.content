@@ -2,6 +2,8 @@
 <Content id="MainContent5" height="420" width="800" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="120" left="40" width="680" height="205" zIndex="0" barAnimation="true" labelPosition="middle" labelSize="50" barBackColor="rgba(255, 128, 0, 1)" barColor="rgba(0, 0, 0, 1)" fontName="Times New Roman" fontSize="100px" fontColor="rgba(0, 255, 0, 1)" bold="true" />
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="20" left="420" width="280" height="80" zIndex="1" pageId="page_0" text="Zur Startseite" fontSize="25px" fontName="Times New Roman" bold="true" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="20" left="420" width="280" height="80" zIndex="1" pageId="page_0" text="Zur Startseite" fontSize="25px" fontName="Times New Roman" bold="true" enable="false" />
+    <Widget xsi:type="widgets.brease.Password" id="Password1" top="360" left="180" width="280" zIndex="2" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="360" left="60" width="120" zIndex="3" text="PW Eingabe: " />
   </Widgets>
 </Content>
