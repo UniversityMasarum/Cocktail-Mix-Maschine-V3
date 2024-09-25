@@ -72,5 +72,61 @@
 <Target xsi:type="brease" contentRefId="MainContent0" widgetRefId="NavigationButton4" attribute="enable" />
 </Binding>
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch14" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch7" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch6" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch5" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch4" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch9" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch8" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch10" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:activatesAllPumps_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch14" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:reingigunsmodus_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch15" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:deactivatesAllPumps_var" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainContent3" widgetRefId="ToggleSwitch15" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

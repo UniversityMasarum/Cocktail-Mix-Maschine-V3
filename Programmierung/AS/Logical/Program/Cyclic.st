@@ -39,6 +39,33 @@ PROGRAM _CYCLIC
 				directionTreadmillright_DO := 0;
 			END_IF
 			
+			IF activatesAllPumps_var = TRUE THEN
+				activatesAllPumps_var := FALSE;	
+				pumpeBig1_DO := TRUE;
+				pumpeBig2_DO := TRUE;
+				pumpeBig3_DO := TRUE;
+				pumpeBig4_DO := TRUE;
+				pumpeSmall1_DO := TRUE;
+				pumpeSmall2_DO := TRUE;
+				pumpeSmall3_DO := TRUE;
+				pumpeSmall4_DO := TRUE;
+				pumpeSmall5_DO := TRUE;
+				pumpeSmall6_DO := TRUE;
+			END_IF
+			
+			IF deactivatesAllPumps_var = TRUE THEN
+				deactivatesAllPumps_var := FALSE;	
+				pumpeBig1_DO := FALSE;
+				pumpeBig2_DO := FALSE;
+				pumpeBig3_DO := FALSE;
+				pumpeBig4_DO := FALSE;
+				pumpeSmall1_DO := FALSE;
+				pumpeSmall2_DO := FALSE;
+				pumpeSmall3_DO := FALSE;
+				pumpeSmall4_DO := FALSE;
+				pumpeSmall5_DO := FALSE;
+				pumpeSmall6_DO := FALSE;
+			END_IF
 			
 		ELSE
 			CASE currentStation_var OF

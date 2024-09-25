@@ -2,17 +2,17 @@
 <Content id="MainContent3" height="420" width="720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="420" width="160" zIndex="0" text="Laufband Richtung" textAlign="center" />
-    <Widget xsi:type="widgets.brease.Label" id="Label2" top="380" left="40" width="160" zIndex="1" text="Alle Pumpen aktivieren:" textAlign="center" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="80" left="40" width="140" zIndex="2" text="Pumpe 1" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch2" top="140" left="40" width="140" zIndex="3" text="Pumpe 2" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch3" top="200" left="40" width="140" zIndex="4" text="Pumpe 3" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch4" top="260" left="40" width="140" zIndex="5" text="Pumpe 4" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch5" top="320" left="40" width="140" zIndex="6" text="Pumpe 5" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch6" top="80" left="220" width="140" zIndex="7" text="Pumpe 6" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch7" top="140" left="220" width="140" zIndex="8" text="Pumpe 7" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch8" top="200" left="220" width="140" zIndex="9" text="Pumpe 8" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch9" top="260" left="220" width="140" zIndex="10" text="Pumpe 9" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch10" top="320" left="220" width="140" zIndex="11" text="Pumpe 10" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="340" left="40" width="160" zIndex="1" text="Alle Pumpen aktivieren:" textAlign="center" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="60" left="40" width="140" zIndex="2" text="Pumpe 1" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch2" top="120" left="40" width="140" zIndex="3" text="Pumpe 2" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch3" top="180" left="40" width="140" zIndex="4" text="Pumpe 3" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch4" top="240" left="40" width="140" zIndex="5" text="Pumpe 4" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch5" top="300" left="40" width="140" zIndex="6" text="Pumpe 5" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch6" top="60" left="220" width="140" zIndex="7" text="Pumpe 6" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch7" top="120" left="220" width="140" zIndex="8" text="Pumpe 7" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch8" top="180" left="220" width="140" zIndex="9" text="Pumpe 8" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch9" top="240" left="220" width="140" zIndex="10" text="Pumpe 9" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch10" top="300" left="220" width="140" zIndex="11" text="Pumpe 10" enable="false" />
     <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="60" left="420" height="140" zIndex="12">
       <Widgets>
         <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch11" top="60" left="20" width="160" zIndex="0" text="Laufband Links" />
@@ -23,7 +23,9 @@
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch13" top="20" left="40" width="200" zIndex="13" text="Reinigungsmodus" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton12" top="340" left="420" width="200" height="60" zIndex="14" text="RESET AUF START" bold="true" />
     <Widget xsi:type="widgets.brease.PushButton" id="PushButton10" top="260" left="420" width="200" height="60" zIndex="15" text="Testcocktail" fontSize="18px" fontName="Times New Roman" bold="true" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch14" top="380" left="220" width="140" zIndex="16" text="Pumpen" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch14" top="340" left="220" width="140" zIndex="16" text="Pumpen AN" enable="false" />
     <Widget xsi:type="widgets.brease.Label" id="Label3" top="220" left="420" width="200" zIndex="17" text="Testcocktail Ausführen:" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="380" left="40" width="180" zIndex="18" text="Alle Pumpen deaktivieren:" textAlign="center" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch15" top="380" left="220" width="140" zIndex="19" text="Pumpen AUS" enable="false" />
   </Widgets>
 </Content>

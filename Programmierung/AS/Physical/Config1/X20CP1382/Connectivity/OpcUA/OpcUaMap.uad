@@ -35,6 +35,8 @@
         <Variable Name="passwordVisuCorrect_var" />
         <Variable Name="passwordVisu_st" />
         <Variable Name="goToMainpage_var" />
+        <Variable Name="activatesAllPumps_var" />
+        <Variable Name="deactivatesAllPumps_var" />
       </Task>
       <Task Name="Program1">
         <Variable Name="angelblue_var" />

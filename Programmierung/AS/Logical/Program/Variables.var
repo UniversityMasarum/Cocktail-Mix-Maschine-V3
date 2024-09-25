@@ -40,6 +40,8 @@ VAR CONSTANT
 END_VAR
 VAR
 	hilfsCounterEismaschine_var : UDINT := 0; (*Zählt einen Delay ein, damit der Wagen nicht direkt weiterfährt, wenn die Eiswürfel kommen*)
+	deactivatesAllPumps_var : BOOL := FALSE; (*Kann im Reinigunsprogramm aktiviert werden und schaltet alle Pumpen AUS*)
+	activatesAllPumps_var : BOOL := FALSE; (*Kann im Reinigungsprogramm aktiviert werden und schaltet alle Pumpen AN*)
 END_VAR
 VAR CONSTANT
 	stationZitronenspender_var : USINT := 2; (*Station Zitronenspender als Festwert*)
