@@ -5,7 +5,6 @@ PROGRAM _CYCLIC
 	ELSE
 		passwordVisuCorrect_var := FALSE;
 	END_IF
-
 		
 	
 	IF ERROR_DI = TRUE THEN

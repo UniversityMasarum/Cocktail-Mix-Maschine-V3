@@ -8,7 +8,5 @@
     <Object Type="File">laufband.binding</Object>
     <Object Type="File">AlcoholGetraenke.eventbinding</Object>
     <Object Type="File">NonAlcoholicaGetraenke.eventbinding</Object>
-    <Object Type="File">MainContent0.binding</Object>
-    <Object Type="File">MainContent1.binding</Object>
   </Objects>
 </Package>

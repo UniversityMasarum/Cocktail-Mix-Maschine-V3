@@ -29,7 +29,7 @@
           <Step order="0">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::Program1:kirschcola_var">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>
           </Step>
