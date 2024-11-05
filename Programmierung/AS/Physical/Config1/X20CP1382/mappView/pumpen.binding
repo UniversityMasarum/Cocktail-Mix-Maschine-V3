@@ -132,5 +132,5 @@
 		<Source xsi:type="opcUa" refId="::Program:passwordVisu_st" attribute="value" />
 		<Target xsi:type="brease" contentRefId="MainContent5" widgetRefId="Password1" attribute="value" />
 		</Binding>
-</Bindings>
+	</Bindings>
 </BindingsSet>

@@ -56,6 +56,7 @@
         <Variable Name="banane_var" />
         <Variable Name="tonic_var" />
         <Variable Name="bluelagoon_var" />
+        <Variable Name="Anzahl_Cocktails" />
       </Task>
     </Module>
   </DefaultView>
